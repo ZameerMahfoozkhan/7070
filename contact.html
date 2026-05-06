@@ -1,0 +1,737 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/favicon_io/favicon.ico" type="image/x-icon">
+    <title>Contact Us - 7070SPORTS AYODHYA</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        cricket: {
+                            green: '#2D5016',
+                            gold: '#FFD700',
+                            brown: '#8B4513'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="canonical" href="https://7070sportsayodhya.com/contact.html" />
+</head>
+<body class="bg-white">
+    <!-- Header/Navbar -->
+
+    <header class="bg-white shadow-lg sticky top-0 z-50">
+        <nav class="container mx-auto px-4 py-4">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center space-x-2 md:space-x-3">
+                    <div class="p-1.5 md:p-2 rounded-full">
+                        <img src="/photos/logo-removebg-preview.png" alt="7070SPORTS Logo" class="w-8 h-8 md:w-10 md:h-10 object-contain ">                    </div>
+                    <div>
+                        <h1 class="text-lg md:text-2xl font-bold text-cricket-green">7070SPORTS</h1>
+                        <p class="text-[10px] md:text-xs text-gray-600 -mt-1">AYODHYA</p>
+                    </div>
+                </div>
+                
+                <!-- Desktop Menu -->
+                <div class="hidden lg:flex space-x-6 xl:space-x-8 items-center">
+                    <a href="index.html" class="text-gray-700 hover:text-cricket-green transition duration-300 text-sm xl:text-base">Home</a>
+                    <div class="relative group">
+                        <button class="text-gray-700 hover:text-cricket-green transition duration-300 flex items-center text-sm xl:text-base">
+                            Categories <i class="fas fa-chevron-down ml-1 text-xs"></i>
+                        </button>
+                        <div class="absolute top-full left-0 bg-white shadow-xl rounded-lg py-3 w-56 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 border">
+                            <a href="bats.html" class="flex items-center px-4 py-3 text-gray-700 hover:bg-cricket-green hover:text-white transition duration-300 text-sm">
+                                <i class="fas fa-baseball-bat mr-3"></i>Cricket Bats
+                            </a>
+                            <a href="balls.html" class="flex items-center px-4 py-3 text-gray-700 hover:bg-cricket-green hover:text-white transition duration-300 text-sm">
+                                <i class="fas fa-baseball-ball mr-3"></i>Cricket Balls
+                            </a>
+                            <a href="jerseys.html" class="flex items-center px-4 py-3 text-gray-700 hover:bg-cricket-green hover:text-white transition duration-300 text-sm">
+                                <i class="fas fa-tshirt mr-3"></i>Jerseys
+                            </a>
+                            <a href="trackpants.html" class="flex items-center px-4 py-3 text-gray-700 hover:bg-cricket-green hover:text-white transition duration-300 text-sm">
+                                <i class="fas fa-running mr-3"></i>Track Pants
+                            </a>
+                            <a href="caps.html" class="flex items-center px-4 py-3 text-gray-700 hover:bg-cricket-green hover:text-white transition duration-300 text-sm">
+                                <i class="fas fa-hat-cowboy mr-3"></i>Caps
+                            </a>
+                            <a href="shoes.html" class="flex items-center px-4 py-3 text-gray-700 hover:bg-cricket-green hover:text-white transition duration-300 text-sm">
+                                <i class="fas fa-shoe-prints mr-3"></i>Cricket Shoes
+                            </a>
+                        </div>
+                    </div>
+                    <a href="about.html" class="text-cricket-green font-semibold border-b-2 border-cricket-green pb-1 text-sm xl:text-base">About</a>
+                    <a href="contact.html" class="text-gray-700 hover:text-cricket-green transition duration-300 text-sm xl:text-base">Contact</a>
+                    <a href="https://wa.me/91180334856" target="_blank" class="bg-green-500 hover:bg-green-600 text-white px-4 xl:px-6 py-2 xl:py-2.5 rounded-lg font-semibold transition duration-300 flex items-center gap-2 text-sm xl:text-base shadow-lg">
+                        <i class="fab fa-whatsapp text-lg xl:text-xl"></i>
+                        Chat on WhatsApp
+                    </a>
+                </div>
+                
+                <!-- Mobile Menu Button -->
+                <button id="mobile-menu-btn" class="lg:hidden text-cricket-green p-2">
+                    <i class="fas fa-bars text-lg md:text-xl"></i>
+                </button>
+            </div>
+            
+            <!-- Mobile Menu -->
+           <div id="mobile-menu" class="hidden lg:hidden mt-4 pb-4 border-t">
+                <a href="index.html" class="block py-2.5 text-gray-700 hover:text-cricket-green text-sm">Home</a>
+                <a href="bats.html" class="block py-2.5 text-gray-700 hover:text-cricket-green text-sm">Cricket Bats</a>
+                <a href="balls.html" class="block py-2.5 text-gray-700 hover:text-cricket-green text-sm">Cricket Balls</a>
+                <a href="jerseys.html" class="block py-2.5 text-gray-700 hover:text-cricket-green text-sm">Jerseys</a>
+                <a href="trackpants.html" class="block py-2.5 text-gray-700 hover:text-cricket-green text-sm">Track Pants</a>
+                <a href="caps.html" class="block py-2.5 text-gray-700 hover:text-cricket-green text-sm">Caps</a>
+                <a href="shoes.html" class="block py-2.5 text-gray-700 hover:text-cricket-green text-sm">Cricket Shoes</a>
+                <a href="about.html" class="block py-2.5 text-gray-700 hover:text-cricket-green text-sm">About</a>
+                <a href="contact.html" class="block py-2.5 text-gray-700 hover:text-cricket-green text-sm">Contact</a>
+                <a href="https://wa.me/9118033485" target="_blank" class="block mt-3 bg-green-500 hover:bg-green-600 text-white px-4 py-2.5 rounded-lg font-semibold transition duration-300 text-center text-sm">
+                    <i class="fab fa-whatsapp mr-2"></i>Chat on WhatsApp
+                </a>
+            </div>
+        </nav>
+    </header>
+
+
+    <!-- Hero Section -->
+    <section class="relative py-12 md:py-16 bg-gradient-to-br from-cricket-green via-green-700 to-green-900 text-white overflow-hidden">
+        <div class="absolute inset-0 bg-black bg-opacity-20"></div>
+         <div class="absolute inset-0">
+            <div class="absolute top-10 left-10 w-12 h-12 md:w-16 md:h-16 bg-cricket-gold rounded-full opacity-20 animate-pulse"></div>
+            <div class="absolute bottom-20 right-20 w-16 h-16 md:w-24 md:h-24 bg-cricket-gold rounded-full opacity-10 animate-pulse delay-1000"></div>
+            <div class="absolute top-1/2 left-1/4 w-8 h-8 md:w-12 md:h-12 bg-white rounded-full opacity-5 animate-pulse delay-500"></div>
+        </div>
+        <div class="container mx-auto px-4 relative z-10">
+            <div class="text-center max-w-4xl mx-auto">
+                <div class="inline-block bg-cricket-gold text-cricket-green px-3 md:px-4 py-1 md:py-1.5 rounded-full text-[10px] md:text-xs font-semibold mb-3 md:mb-4">
+                    Get In Touch
+                </div>
+                <h1 class="text-xl md:text-3xl lg:text-4xl font-bold mb-3 md:mb-4 leading-tight">
+                    Contact <span class="text-cricket-gold">7070SPORTS</span>
+                </h1>
+                <p class="text-xs md:text-base lg:text-lg text-gray-200 leading-relaxed">
+                    We're here to help you find the perfect cricket equipment and answerall your questions
+                </p>
+                <!-- <div class="flex flex-col sm:flex-row gap-3 md:gap-4 justify-center">
+                     <a href="#contact-form" class="bg-cricket-gold text-cricket-green px-6 md:px-8 py-3 md:py-4 rounded-lg font-bold text-sm md:text-lg hover:bg-yellow-400 transition duration-300 transform hover:scale-105">
+                        Send Message
+                    </a>
+                    <a href="#store-info" class="border-2 border-white text-white px-6 md:px-8 py-3 md:py-4 rounded-lg font-bold text-sm md:text-lg hover:bg-white hover:text-cricket-green transition duration-300">
+                        Visit Store
+                    </a>
+                </div> -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Quick Contact Cards -->
+    <section class="py-12 md:py-16 -mt-10 relative z-10 bg-white">
+        <div class="container mx-auto px-4">
+            <!-- CHANGE: Updated slider to match testimonial section pattern with proper sizing -->
+            <div class="relative">
+                <div id="contact-slider" class="overflow-hidden">
+                    <div id="contact-track" class="flex transition-transform duration-500 ease-in-out">
+                        <div class="flex-shrink-0 w-full md:w-1/2 lg:w-1/4 px-2">
+                            <div class="bg-white p-6 md:p-8 rounded-xl md:rounded-2xl  text-center hover:shadow-3xl transition duration-500 transform hover:-translate-y-2 h-full  border-2 border-cricket-green">
+                                <div class="bg-cricket-green text-white w-14 h-14 md:w-16 md:h-16 rounded-full flex items-center justify-center mx-auto mb-4 md:mb-6">
+                                    <i class="fas fa-phone text-xl md:text-2xl"></i>
+                                </div>
+                                <h3 class="text-lg md:text-xl font-bold text-cricket-green mb-3 md:mb-4">Call Us Now</h3>
+                                <p class="text-gray-600 mb-3 md:mb-4 text-xs md:text-base">Speak directly with our cricket experts</p>
+                                <a href="tel:+91 91180 3348" class="text-xl md:text-2xl font-bold text-cricket-green hover:text-green-700 transition duration-300">
+                                   +91 91180 33485
+                                </a>
+                                <p class="text-xs md:text-sm text-gray-500 mt-2">Available 9 AM - 8 PM</p>
+                            </div>
+                        </div>
+
+                        <div class="flex-shrink-0 w-full md:w-1/2 lg:w-1/4 px-2">
+                            <div class="bg-white p-6 md:p-8 rounded-xl md:rounded-2xl  text-center hover:shadow-3xl transition duration-500 transform hover:-translate-y-2 h-full  border-2 border-cricket-green">
+                                <div class="bg-cricket-green text-white w-14 h-14 md:w-16 md:h-16 rounded-full flex items-center justify-center mx-auto mb-4 md:mb-6">
+                                    <i class="fab fa-whatsapp text-xl md:text-2xl"></i>
+                                </div>
+                                <h3 class="text-lg md:text-xl font-bold text-cricket-green mb-3 md:mb-4">WhatsApp Us</h3>
+                                <p class="text-gray-600 mb-3 md:mb-4 text-xs md:text-base">Quick responses and product images</p>
+                                <a href="https://wa.me/9118033485" class="text-xl md:text-2xl font-bold text-cricket-green hover:text-green-700 transition duration-300">
+                                    +91 91180 33485
+                                </a>
+                                <p class="text-xs md:text-sm text-gray-500 mt-2">Instant messaging support</p>
+                            </div>
+                        </div>
+
+                        <div class="flex-shrink-0 w-full md:w-1/2 lg:w-1/4 px-2">
+                            <div class="bg-white p-6 md:p-8 rounded-xl md:rounded-2xl  text-center hover:shadow-3xl transition duration-500 transform hover:-translate-y-2 h-full  border-2 border-cricket-green">
+                                <div class="bg-cricket-green text-white w-14 h-14 md:w-16 md:h-16 rounded-full flex items-center justify-center mx-auto mb-4 md:mb-6">
+                                    <i class="fas fa-envelope text-xl md:text-2xl"></i>
+                                </div>
+                                <h3 class="text-lg md:text-xl font-bold text-cricket-green mb-3 md:mb-4">Email Us</h3>
+                                <p class="text-gray-600 mb-3 md:mb-4 text-xs md:text-base">Detailed inquiries and support</p>
+                                <a href="mailto:info@7070sportsayodhya.com" class="text-base md:text-lg font-bold text-cricket-green hover:text-green-700 transition duration-300 break-all">
+                                    info@7070sportsayodhya.com
+                                </a>
+                                <p class="text-xs md:text-sm text-gray-500 mt-2">We reply within 24 hours</p>
+                            </div>
+                        </div>
+
+                        <div class="flex-shrink-0 w-full md:w-1/2 lg:w-1/4 px-2">
+                            <div class="bg-white p-6 md:p-8 rounded-xl md:rounded-2xl  text-center hover:shadow-3xl transition duration-500 transform hover:-translate-y-2 h-full  border-2 border-cricket-green">
+                                <div class="bg-red-600 text-white w-14 h-14 md:w-16 md:h-16 rounded-full flex items-center justify-center mx-auto mb-4 md:mb-6">
+                                    <i class="fab fa-youtube text-xl md:text-2xl"></i>
+                                </div>
+                                <h3 class="text-lg md:text-xl font-bold text-cricket-green mb-3 md:mb-4">YouTube Channel</h3>
+                                <p class="text-gray-600 mb-3 md:mb-4 text-xs md:text-base">Live Broadcasting ,product reviews and cricket tips</p>
+                                <a href="https://youtube.com/@7070sports?si=KzDWyiYHOysUjJ2k" class="text-base md:text-lg font-bold text-cricket-green hover:text-green-700 transition duration-300">
+                                    @7070SPORTS
+                                </a>
+                                <p class="text-xs md:text-sm text-gray-500 mt-2">Subscribe for latest videos</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Dots Navigation -->
+                <div id="contact-dots" class="flex justify-center mt-6 gap-2 hidden">
+                    <button class="w-2 h-2 rounded-full bg-cricket-green"></button>
+                    <button class="w-2 h-2 rounded-full bg-gray-300"></button>
+                    <button class="w-2 h-2 rounded-full bg-gray-300"></button>
+                    <button class="w-2 h-2 rounded-full bg-gray-300"></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Main Content -->
+    <section class="py- bg-white">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16">
+                <!-- Contact Form -->
+                <!-- <div id="contact-form">
+                    <div class="bg-white p-6 rounded-2xl shadow-2xl">
+                        <div class="text-center mb-8">
+                            <h2 class="text-3xl font-bold text-cricket-green mb-4">Send us a Message</h2>
+                            <p class="text-gray-600">Fill out the form below and we'll get back to you as soon as possible</p>
+                        </div>
+                        
+                        <form class="space-y-6" id="main-contact-form">
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                                <div>
+                                    <label class="block text-sm font-bold text-gray-700 mb-2">
+                                        <i class="fas fa-user mr-2 text-cricket-green"></i>Full Name *
+                                    </label>
+                                    <input type="text" placeholder="Enter your full name" class="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:outline-none focus:border-cricket-green focus:ring-2 focus:ring-cricket-green/20 transition duration-300" required>
+                                </div>
+                                <div>
+                                    <label class="block text-sm font-bold text-gray-700 mb-2">
+                                        <i class="fas fa-phone mr-2 text-cricket-green"></i>Phone Number
+                                    </label>
+                                    <input type="tel" placeholder="Enter your phone number" class="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:outline-none focus:border-cricket-green focus:ring-2 focus:ring-cricket-green/20 transition duration-300">
+                                </div>
+                            </div>
+                            
+                            <div>
+                                <label class="block text-sm font-bold text-gray-700 mb-2">
+                                    <i class="fas fa-envelope mr-2 text-cricket-green"></i>Email Address *
+                                </label>
+                                <input type="email" placeholder="Enter your email address" class="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:outline-none focus:border-cricket-green focus:ring-2 focus:ring-cricket-green/20 transition duration-300" required>
+                            </div>
+                            
+                            <div>
+                                <label class="block text-sm font-bold text-gray-700 mb-2">
+                                    <i class="fas fa-tag mr-2 text-cricket-green"></i>Subject
+                                </label>
+                                <select class="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:outline-none focus:border-cricket-green focus:ring-2 focus:ring-cricket-green/20 transition duration-300">
+                                    <option>General Inquiry</option>
+                                    <option>Product Information</option>
+                                    <option>Custom Order Request</option>
+                                    <option>Bulk Purchase</option>
+                                    <option>Brand Partnership</option>
+                                    <option>Complaint/Feedback</option>
+                                    <option>Other</option>
+                                </select>
+                            </div>
+                            
+                            <div>
+                                <label class="block text-sm font-bold text-gray-700 mb-2">
+                                    <i class="fas fa-comment mr-2 text-cricket-green"></i>Message *
+                                </label>
+                                <textarea placeholder="Tell us how we can help you. Be as detailed as possible..." rows="6" class="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:outline-none focus:border-cricket-green focus:ring-2 focus:ring-cricket-green/20 transition duration-300 resize-none" required></textarea>
+                            </div>
+                            
+                            <div class="flex items-center">
+                                <input type="checkbox" id="newsletter" class="mr-3 w-4 h-4 text-cricket-green">
+                                <label for="newsletter" class="text-sm text-gray-600">Subscribe to our newsletter for latest updates and offers</label>
+                            </div>
+                            
+                            <button type="submit" class="w-full bg-cricket-green text-white py-4 rounded-lg hover:bg-green-700 transition duration-300 font-bold text-lg transform hover:scale-105 flex items-center justify-center">
+                                <i class="fas fa-paper-plane mr-2"></i>Send Message
+                            </button>
+                        </form>
+                    </div>
+                </div> -->
+
+                 <div class="bg-white p-6 md:p-8 rounded-xl md:rounded-2xl shadow-2xl">
+                        <h3 class="text-xl md:text-2xl font-bold text-cricket-green mb-4 md:mb-6"> <i class="fas fa-comment mr-3"></i> Send us a Message</h3>
+                        <form class="space-y-4 md:space-y-6" id="contact-form">
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6">
+                                <div>
+                                    <label class="block text-xs md:text-sm font-semibold text-gray-700 mb-2">Full Name *</label>
+                                    <input type="text" placeholder="Enter your full name" class="w-full px-3 md:px-4 py-2 md:py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-cricket-green focus:ring-2 focus:ring-cricket-green/20 transition duration-300 text-sm md:text-base" required>
+                                </div>
+                                <div>
+                                    <label class="block text-xs md:text-sm font-semibold text-gray-700 mb-2">Phone Number</label>
+                                    <input type="tel" placeholder="Enter your phone number" class="w-full px-3 md:px-4 py-2 md:py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-cricket-green focus:ring-2 focus:ring-cricket-green/20 transition duration-300 text-sm md:text-base">
+                                </div>
+                            </div>
+                            <div>
+                                <label class="block text-xs md:text-sm font-semibold text-gray-700 mb-2">Email Address *</label>
+                                <input type="email" placeholder="Enter your email address" class="w-full px-3 md:px-4 py-2 md:py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-cricket-green focus:ring-2 focus:ring-cricket-green/20 transition duration-300 text-sm md:text-base" required>
+                            </div>
+                            <div>
+                                <label class="block text-xs md:text-sm font-semibold text-gray-700 mb-2">Subject</label>
+                                <select class="w-full px-3 md:px-4 py-2 md:py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-cricket-green focus:ring-2 focus:ring-cricket-green/20 transition duration-300 text-sm md:text-base">
+                                    <option>General Inquiry</option>
+                                    <option>Product Information</option>
+                                    <option>Custom Order</option>
+                                    <option>Complaint</option>
+                                    <option>Other</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label class="block text-xs md:text-sm font-semibold text-gray-700 mb-2">Message *</label>
+                                <textarea placeholder="Tell us how we can help you..." rows="1" class="w-full px-3 md:px-4 py-2 md:py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-cricket-green focus:ring-2 focus:ring-cricket-green/20 transition duration-300 resize-none text-sm md:text-base" required></textarea>
+                            </div>
+                            <button type="submit" class="w-full bg-cricket-green text-white py-3 md:py-4 rounded-lg hover:bg-green-700 transition duration-300 font-bold text-sm md:text-lg transform hover:scale-105">
+                                Send Message
+                            </button>
+                        </form>
+                    </div>
+
+                <!-- Store Information -->
+                <div id="store-info">
+                    <div class="space-y-8">
+                        <!-- Store Details -->
+                        <div class="bg-white p-6 md:p-8 rounded-2xl shadow-2xl">
+                            <h3 class="text-2xl font-bold md:text-2xl text-cricket-green mb-6 flex items-center mb-4 md:mb-6">
+                                <i class="fas fa-store mr-3"></i>Visit Our Store
+                            </h3>
+                            
+                            <div class="space-y-6">
+                                <!-- <div class="flex items-start p-4 bg-gray-50 rounded-lg">
+                                    <div class="bg-cricket-green text-white p-3 rounded-full mr-4 flex-shrink-0">
+                                        <i class="fas fa-map-marker-alt"></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-bold text-lg mb-2">Store Address</h4>
+                                        <p class="text-gray-600 leading-relaxed">
+                                            Ram Path,Angoori Bagh<br>
+                                            Ayodhya, Uttar Pradesh<br>
+                                        </p>
+                                        <a href="https://maps.app.goo.gl/3LaaiJvVMj1V9iWaA?g_st=aw" class="inline-block mt-2 text-cricket-green font-semibold hover:underline">
+                                            <i class="fas fa-directions mr-1"></i>Get Directions
+                                        </a>
+                                    </div>
+                                </div> -->
+
+                                <div class="flex items-start p-4 bg-gray-50 rounded-lg">
+                                    <div class="bg-cricket-green text-white p-3 rounded-full mr-4 flex-shrink-0">
+                                        <i class="fas fa-clock"></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-bold text-lg mb-2">Store Hours</h4>
+                                        <div class="text-gray-600 space-y-1">
+                                            <p><span class="font-semibold">Monday - Saturday:</span> 9:00 AM - 8:00 PM</p>
+                                            <p><span class="font-semibold">Sunday:</span> 10:00 AM - 6:00 PM</p>
+                                            <p class="text-sm text-green-600 mt-2">
+                                                <i class="fas fa-info-circle mr-1"></i>Extended hours during cricket season
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                 <!-- <div class="flex items-start p-4 bg-gray-50 rounded-lg">
+                                    <div class="bg-cricket-green text-white p-3 rounded-full mr-4 flex-shrink-0">
+                                        <i class="fas fa-parking"></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-bold text-lg mb-2">Parking & Accessibility</h4>
+                                        <div class="text-gray-600">
+                                            <p>✓ Free parking available</p>
+                                            <p>✓ Wheelchair accessible</p>
+                                            <p>✓ Easy access from main road</p>
+                                        </div>
+                                    </div> -->
+                                </div>
+                        </div>
+                        
+                        <!-- Services -->
+                        <div class="bg-white p-8 rounded-2xl shadow-2xl">
+                            <h3 class="text-2xl font-bold text-cricket-green mb-6 flex items-center">
+                                <i class="fas fa-tools mr-3"></i>Our Services
+                            </h3>
+                            
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                                <div class="flex items-center p-3 bg-gray-50 rounded-lg">
+                                    <i class="fas fa-hammer text-cricket-green mr-3"></i>
+                                    <span>Bat Repair & Maintenance</span>
+                                </div>
+                                <div class="flex items-center p-3 bg-gray-50 rounded-lg">
+                                    <i class="fas fa-tshirt text-cricket-green mr-3"></i>
+                                    <span>Custom Jersey Printing</span>
+                                </div>
+                                <div class="flex items-center p-3 bg-gray-50 rounded-lg">
+                                    <i class="fas fa-users text-cricket-green mr-3"></i>
+                                    <span>Team Equipment Packages</span>
+                                </div>
+                                <div class="flex items-center p-3 bg-gray-50 rounded-lg">
+                                    <i class="fas fa-shipping-fast text-cricket-green mr-3"></i>
+                                    <span>Home Delivery Service</span>
+                                </div>
+                                <div class="flex items-center p-3 bg-gray-50 rounded-lg">
+                                    <i class="fas fa-user-tie text-cricket-green mr-3"></i>
+                                    <span>Expert Consultation</span>
+                                </div>
+                                <div class="flex items-center p-3 bg-gray-50 rounded-lg">
+                                    <i class="fas fa-exchange-alt text-cricket-green mr-3"></i>
+                                    <span>Easy Returns & Exchange</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+                
+            </div>
+           
+        </div>
+    </section>
+
+    <!-- FAQ Section - Centered -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-">
+            <div class="text-center mb-4 md:mb-8">
+                <div class="inline-block bg-cricket-gold text-white px-4 md:px-5 py-1.5 md:py-2 rounded-full text-[10px] md:text-xs font-semibold mb-4 md:mb-5">
+                    Help Center
+                </div>
+                <h2 class="text-xl md:text-3xl lg:text-4xl font-bold text-cricket-green mb-4 md:mb-5">Frequently Asked Questions</h2>
+                <p class="text-sm md:text-base lg:text-lg text-gray-600 max-w-3xl mx-auto leading-relaxed">
+                    Find quick answers to common questions about our products and services
+                </p>
+            </div>
+            
+            <div class="max-w-4xl mx-auto p-6 md:p-8">
+                <div class="bg-white  rounded-2xl shadow-2xl p-8">
+                    <div class="space-y-2">
+                        <div class="border-b border-gray-200 pb-4 ">
+                            <button class="faq-question w-full text-left font-bold text-lg  text-gray-800 hover:text-cricket-green transition duration-300 flex items-center justify-between">
+                                <span><i class="fas fa-truck mr-3 text-cricket-green"></i>Do you offer home delivery?</span>
+                                <i class="fas fa-chevron-down text-sm"></i>
+                            </button>
+                            <div class="faq-answer hidden mt-4 text-gray-600 pl-8">
+                                <p class="leading-relaxed ">Yes, we offer free home delivery within Ayodhya city limits for orders above ₹2000. For other areas in Uttar Pradesh, delivery charges may apply based on distance. We also provide same-day delivery for urgent orders placed before 2 PM.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="border-b border-gray-200 pb-6">
+                            <button class="faq-question w-full text-left font-bold text-lg text-gray-800 hover:text-cricket-green transition duration-300 flex items-center justify-between">
+                                <span><i class="fas fa-exchange-alt mr-3 text-cricket-green"></i>Can I return or exchange products?</span>
+                                <i class="fas fa-chevron-down text-sm"></i>
+                            </button>
+                            <div class="faq-answer hidden mt-4 text-gray-600 pl-8">
+                                <p class="leading-relaxed">Yes, we have a 7-day return and exchange policy for unused products in original condition with receipt. Cricket bats can be exchanged within 3 days if there are any manufacturing defects. Custom printed jerseys cannot be returned unless there's a printing error.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="border-b border-gray-200 pb-6">
+                            <button class="faq-question w-full text-left font-bold text-lg text-gray-800 hover:text-cricket-green transition duration-300 flex items-center justify-between">
+                                <span><i class="fas fa-users mr-3 text-cricket-green"></i>Do you provide bulk discounts?</span>
+                                <i class="fas fa-chevron-down text-sm"></i>
+                            </button>
+                            <div class="faq-answer hidden mt-4 text-gray-600 pl-8">
+                                <p class="leading-relaxed">Yes, we offer attractive discounts for bulk orders and team purchases. Discounts start from 10% for orders above ₹10,000 and can go up to 25% for large team orders. Contact us for custom pricing and team package deals.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="border-b border-gray-200 pb-6">
+                            <button class="faq-question w-full text-left font-bold text-lg text-gray-800 hover:text-cricket-green transition duration-300 flex items-center justify-between">
+                                <span><i class="fas fa-tools mr-3 text-cricket-green"></i>Do you repair cricket equipment?</span>
+                                <i class="fas fa-chevron-down text-sm"></i>
+                            </button>
+                            <div class="faq-answer hidden mt-4 text-gray-600 pl-8">
+                                <p class="leading-relaxed">Yes, we provide comprehensive repair services for cricket bats, including handle replacement, crack repair, re-gripping, and toe guard installation. We also offer maintenance services for other equipment. Repair charges vary based on the type of work required.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="border-b border-gray-200 pb-6">
+                            <button class="faq-question w-full text-left font-bold text-lg text-gray-800 hover:text-cricket-green transition duration-300 flex items-center justify-between">
+                                <span><i class="fas fa-credit-card mr-3 text-cricket-green"></i>What payment methods do you accept?</span>
+                                <i class="fas fa-chevron-down text-sm"></i>
+                            </button>
+                            <div class="faq-answer hidden mt-4 text-gray-600 pl-8">
+                                <p class="leading-relaxed">We accept cash, all major credit/debit cards, UPI payments (Google Pay, PhonePe, Paytm), and bank transfers. For online orders, we also accept net banking and digital wallets. EMI options are available for purchases above ₹5,000.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="pb-6">
+                            <button class="faq-question w-full text-left font-bold text-lg text-gray-800 hover:text-cricket-green transition duration-300 flex items-center justify-between">
+                                <span><i class="fas fa-certificate mr-3 text-cricket-green"></i>Are your products authentic?</span>
+                                <i class="fas fa-chevron-down text-sm"></i>
+                            </button>
+                            <div class="faq-answer hidden mt-4 text-gray-600 pl-8">
+                                <p class="leading-relaxed">Absolutely! We are authorized dealers for all major cricket brands and guarantee 100% authentic products. All items come with manufacturer warranty and authenticity certificates. We have direct partnerships with brands like SG, SS, GM, and Kookaburra.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="text-center mt-6 pt-4 border-t border-gray-200">
+                        <h3 class="text-xl font-bold text-cricket-green mb-4">Still have questions?</h3>
+                        <p class="text-gray-600  text-sm mb-6">Can't find the answer you're looking for? Our team is here to help!</p>
+                        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                            <a href="tel:+919118033485" class="bg-cricket-green text-white px-6 py-3 rounded-lg font-semibold hover:bg-green-700 transition duration-300 flex items-center justify-center">
+                                <i class="fas fa-phone mr-2"></i>Call Us Now
+                            </a>
+                            <a href="https://wa.me/919118033485" class="bg-green-500 text-white px-6 py-3 rounded-lg font-semibold hover:bg-green-600 transition duration-300 flex items-center justify-center">
+                                <i class="fab fa-whatsapp mr-2"></i>WhatsApp Us
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="py-10 bg-gray-100">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-cricket-green mb-4">Find Us on Map</h2>
+                <p class="text-gray-600">Located in the heart of Ayodhya, easily accessible from all major areas</p>
+            </div>
+            
+            <div class="bg-white p-4 rounded-2xl shadow-2xl">
+                <div class="bg-gray-200 h-96 rounded-lg flex items-center justify-center">
+                    <div class="text-center">
+                        <i class="fas fa-map-marked-alt text-6xl text-cricket-green mb-4"></i>
+                        <h3 class="text-xl font-bold text-cricket-green mb-2">Interactive Map</h3>
+                        <p class="text-gray-600 mb-4">Ram Path, Angoori Bagh, Ayodhya</p>
+                        <a href="https://maps.app.goo.gl/3LaaiJvVMj1V9iWaA?g_st=aw" class="bg-cricket-green text-white px-6 py-3 rounded-lg hover:bg-green-700 transition duration-300">
+                            Open in Google Maps
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+     <footer class="bg-cricket-green text-white py-4 md:py-8 lg:py-10">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-8 lg:gap-12">
+                <div class="col-span-2 md:col-span-1">
+                    <div class="flex items-center space-x-2 mb-3 md:mb-6">
+                        <div class="bg-white w-8 h-8 md:w-10 md:h-10 rounded-full flex items-center justify-center p-1 shadow-lg">
+                        <img src="/photos/logo-removebg-preview.png" alt="7070SPORTS Logo" class="w-8 h-8 md:w-10 md:h-10 object-cover "></div>
+                        <div>
+                            <h3 class="text-base md:text-2xl font-bold">7070SPORTS</h3>
+                            <p class="text-[9px] md:text-sm text-gray-300 -mt-1">AYODHYA</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-300 mb-3 md:mb-6 leading-relaxed text-[10px] md:text-base hidden md:block">Your trusted partner for premium cricket equipment in Ayodhya.</p>
+                    <div class="flex space-x-2 md:space-x-4">
+                        <a href="https://www.facebook.com/share/19XDb8hzyE/" class="bg-cricket-gold text-cricket-green p-1.5 md:p-3 rounded-full hover:bg-yellow-400 transition duration-300">
+                            <i class="fab fa-facebook text-xs md:text-base"></i>
+                        </a>
+                        <a href="https://www.instagram.com/7070sports_ayodhya_?igsh=ODh6dzlvNGZtYWQy" class="bg-cricket-gold text-cricket-green p-1.5 md:p-3 rounded-full hover:bg-yellow-400 transition duration-300">
+                            <i class="fab fa-instagram text-xs md:text-base"></i>
+                        </a>
+                        <a href="https://chat.whatsapp.com/LGrpHnsJnYfDV3YGjspprH?mode=ems_copy_t" class="bg-cricket-gold text-cricket-green p-1.5 md:p-3 rounded-full hover:bg-yellow-400 transition duration-300">
+                            <i class="fab fa-whatsapp text-xs md:text-base"></i>
+                        </a>
+                        <a href="https://www.youtube.com/live/r8u07clvWk8?si=Ar0Xukxn5SeWtXoX" class="bg-cricket-gold text-cricket-green p-1.5 md:p-3 rounded-full hover:bg-yellow-400 transition duration-300">
+                            <i class="fab fa-youtube text-xs md:text-base"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h4 class="text-sm md:text-xl font-bold mb-2 md:mb-6">Quick Links</h4>
+                    <ul class="space-y-1 md:space-y-3">
+                        <li><a href="index.html" class="text-gray-300 hover:text-cricket-gold transition duration-300 flex items-center text-[10px] md:text-base"><i class="fas fa-chevron-right mr-1 md:mr-2 text-[8px] md:text-xs"></i>Home</a></li>
+                        <li><a href="about.html" class="text-gray-300 hover:text-cricket-gold transition duration-300 flex items-center text-[10px] md:text-base"><i class="fas fa-chevron-right mr-1 md:mr-2 text-[8px] md:text-xs"></i>About Us</a></li>
+                        <li><a href="contact.html" class="text-gray-300 hover:text-cricket-gold transition duration-300 flex items-center text-[10px] md:text-base"><i class="fas fa-chevron-right mr-1 md:mr-2 text-[8px] md:text-xs"></i>Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-sm md:text-xl font-bold mb-2 md:mb-6">Categories</h4>
+                    <ul class="space-y-1 md:space-y-3">
+                        <li><a href="bats.html" class="text-gray-300 hover:text-cricket-gold transition duration-300 flex items-center text-[10px] md:text-base"><i class="fas fa-chevron-right mr-1 md:mr-2 text-[8px] md:text-xs"></i>Bats</a></li>
+                        <li><a href="balls.html" class="text-gray-300 hover:text-cricket-gold transition duration-300 flex items-center text-[10px] md:text-base"><i class="fas fa-chevron-right mr-1 md:mr-2 text-[8px] md:text-xs"></i>Balls</a></li>
+                        <li><a href="jerseys.html" class="text-gray-300 hover:text-cricket-gold transition duration-300 flex items-center text-[10px] md:text-base"><i class="fas fa-chevron-right mr-1 md:mr-2 text-[8px] md:text-xs"></i>Jerseys</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-sm md:text-xl font-bold mb-2 md:mb-6">Contact</h4>
+                    <div class="space-y-1.5 md:space-y-4 text-gray-300">
+                        <div class="flex items-start">
+                            <i class="fas fa-map-marker-alt mr-1.5 md:mr-3 mt-0.5 md:mt-1 text-cricket-gold text-[10px] md:text-base"></i>
+                            <p class="text-[10px] md:text-base">Ram Path , Ayodhya</p>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-phone mr-1.5 md:mr-3 text-cricket-gold text-[10px] md:text-base"></i>
+                            <p class="text-[10px] md:text-base">+91 9118033485</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="border-t border-green-600 mt-4 md:mt-12 pt-3 md:pt-8 text-center">
+                <p class="text-gray-300 text-[9px] md:text-base">&copy; 2025 7070SPORTS AYODHYA. All rights reserved.</p>
+                                <p class="text-gray-300 text-[9px] md:text-base">Designed by Mohd Taqi Mehdi.</p>
+
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile Menu Toggle
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Form submission
+        const contactForm = document.getElementById('main-contact-form');
+        if (contactForm) {
+            contactForm.addEventListener('submit', function(e) {
+                e.preventDefault();
+                
+                // Show success message
+                const button = this.querySelector('button[type="submit"]');
+                const originalText = button.innerHTML;
+                button.innerHTML = '<i class="fas fa-check mr-2"></i>Message Sent Successfully!';
+                button.classList.add('bg-green-600');
+                
+                setTimeout(() => {
+                    button.innerHTML = originalText;
+                    button.classList.remove('bg-green-600');
+                    this.reset();
+                }, 3000);
+            });
+        }
+
+        // FAQ Toggle
+        document.querySelectorAll('.faq-question').forEach(question => {
+            question.addEventListener('click', () => {
+                const answer = question.nextElementSibling;
+                const icon = question.querySelector('i.fa-chevron-down, i.fa-chevron-up');
+                
+                if (answer.classList.contains('hidden')) {
+                    answer.classList.remove('hidden');
+                    icon.classList.remove('fa-chevron-down');
+                    icon.classList.add('fa-chevron-up');
+                } else {
+                    answer.classList.add('hidden');
+                    icon.classList.remove('fa-chevron-up');
+                    icon.classList.add('fa-chevron-down');
+                }
+            });
+        });
+
+        // CHANGE: Updated JavaScript to match testimonial section pattern
+        function initHorizontalSlider(sliderId, trackId, dotsId, itemCount) {
+            const slider = document.getElementById(sliderId);
+            const track = document.getElementById(trackId);
+            const dots = document.getElementById(dotsId);
+            
+            if (!slider || !track || !dots) return;
+            
+            let currentIndex = 0;
+            let autoScrollInterval;
+            let slidesPerView = window.innerWidth >= 1024 ? 4 : window.innerWidth >= 768 ? 2 : 1;
+            
+            function updateSlider() {
+                slidesPerView = window.innerWidth >= 1024 ? 4 : window.innerWidth >= 768 ? 2 : 1;
+                const slideWidth = 100 / slidesPerView;
+                track.style.transform = `translateX(-${currentIndex * slideWidth}%)`;
+                
+                // Update dots
+                const dotButtons = dots.querySelectorAll('button');
+                dotButtons.forEach((dot, index) => {
+                    if (index === currentIndex) {
+                        dot.classList.remove('bg-gray-300');
+                        dot.classList.add('bg-cricket-green');
+                    } else {
+                        dot.classList.remove('bg-cricket-green');
+                        dot.classList.add('bg-gray-300');
+                    }
+                });
+            }
+            
+            function nextSlide() {
+                const maxIndex = itemCount - slidesPerView;
+                currentIndex = (currentIndex + 1) > maxIndex ? 0 : currentIndex + 1;
+                updateSlider();
+            }
+            
+            function startAutoScroll() {
+                stopAutoScroll();
+                autoScrollInterval = setInterval(nextSlide, 3000);
+            }
+            
+            function stopAutoScroll() {
+                if (autoScrollInterval) {
+                    clearInterval(autoScrollInterval);
+                }
+            }
+            
+            // Dot navigation
+            const dotButtons = dots.querySelectorAll('button');
+            dotButtons.forEach((dot, index) => {
+                dot.addEventListener('click', () => {
+                    currentIndex = index;
+                    updateSlider();
+                    startAutoScroll();
+                });
+            });
+            
+            // Handle window resize
+            window.addEventListener('resize', () => {
+                updateSlider();
+                startAutoScroll();
+            });
+            
+            // Initialize
+            updateSlider();
+            startAutoScroll();
+        }
+        
+        // Initialize horizontal slider for contact cards
+        initHorizontalSlider('contact-slider', 'contact-track', 'contact-dots', 4);
+    </script>
+</body>
+</html>

@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/favicon_io/favicon.ico" type="image/x-icon">
+    <title>About Us - 7070SPORTS AYODHYA</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        cricket: {
+                            green: '#2D5016',
+                            gold: '#FFD700',
+                            brown: '#8B4513'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="canonical" href="https://7070sportsayodhya.com/about.html" />
+</head>
+<body class="bg-white">
+    <!-- Header/Navbar -->
+     
+    <header class="bg-white shadow-lg sticky top-0 z-50">
+        <nav class="container mx-auto px-3 md:px-4 py-3 md:py-4">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center space-x-2 md:space-x-3">
+                    <div class="p-1.5 md:p-2 rounded-full">
+                        <img src="/photos/logo-removebg-preview.png" alt="7070SPORTS Logo" class="w-8 h-8 md:w-10 md:h-10 object-contain ">                    </div>
+                    <div>
+                        <h1 class="text-lg md:text-2xl font-bold text-cricket-green">7070SPORTS</h1>
+                        <p class="text-[10px] md:text-xs text-gray-600 -mt-1">AYODHYA</p>
+                    </div>
+                </div>
+                
+                <!-- Desktop Menu -->
+                <div class="hidden lg:flex space-x-6 xl:space-x-8 items-center">
+                    <a href="index.html" class="text-gray-700 hover:text-cricket-green transition duration-300 text-sm xl:text-base">Home</a>
+                    <div class="relative group">
+                        <button class="text-gray-700 hover:text-cricket-green transition duration-300 flex items-center text-sm xl:text-base">
+                            Categories <i class="fas fa-chevron-down ml-1 text-xs"></i>
+                        </button>
+                        <div class="absolute top-full left-0 bg-white shadow-xl rounded-lg py-3 w-56 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 border">
+                            <a href="bats.html" class="flex items-center px-4 py-3 text-gray-700 hover:bg-cricket-green hover:text-white transition duration-300 text-sm">
+                                <i class="fas fa-baseball-bat mr-3"></i>Cricket Bats
+                            </a>
+                            <a href="balls.html" class="flex items-center px-4 py-3 text-gray-700 hover:bg-cricket-green hover:text-white transition duration-300 text-sm">
+                                <i class="fas fa-baseball-ball mr-3"></i>Cricket Balls
+                            </a>
+                            <a href="jerseys.html" class="flex items-center px-4 py-3 text-gray-700 hover:bg-cricket-green hover:text-white transition duration-300 text-sm">
+                                <i class="fas fa-tshirt mr-3"></i>Jerseys
+                            </a>
+                            <a href="trackpants.html" class="flex items-center px-4 py-3 text-gray-700 hover:bg-cricket-green hover:text-white transition duration-300 text-sm">
+                                <i class="fas fa-running mr-3"></i>Track Pants
+                            </a>
+                            <a href="caps.html" class="flex items-center px-4 py-3 text-gray-700 hover:bg-cricket-green hover:text-white transition duration-300 text-sm">
+                                <i class="fas fa-hat-cowboy mr-3"></i>Caps
+                            </a>
+                            <a href="shoes.html" class="flex items-center px-4 py-3 text-gray-700 hover:bg-cricket-green hover:text-white transition duration-300 text-sm">
+                                <i class="fas fa-shoe-prints mr-3"></i>Cricket Shoes
+                            </a>
+                        </div>
+                    </div>
+                    <a href="about.html" class="text-cricket-green font-semibold border-b-2 border-cricket-green pb-1 text-sm xl:text-base">About</a>
+                    <a href="contact.html" class="text-gray-700 hover:text-cricket-green transition duration-300 text-sm xl:text-base">Contact</a>
+                    <a href="https://wa.me/9118033485" target="_blank" class="bg-green-500 hover:bg-green-600 text-white px-4 xl:px-6 py-2 xl:py-2.5 rounded-lg font-semibold transition duration-300 flex items-center gap-2 text-sm xl:text-base shadow-lg">
+                        <i class="fab fa-whatsapp text-lg xl:text-xl"></i>
+                        Chat on WhatsApp
+                    </a>
+                </div>
+                
+                <!-- Mobile Menu Button -->
+                <button id="mobile-menu-btn" class="lg:hidden text-cricket-green p-2">
+                    <i class="fas fa-bars text-lg md:text-xl"></i>
+                </button>
+            </div>
+            
+            <!-- Mobile Menu -->
+            <div id="mobile-menu" class="hidden lg:hidden mt-4 pb-4 border-t">
+                <a href="index.html" class="block py-2.5 text-gray-700 hover:text-cricket-green text-sm">Home</a>
+                <a href="bats.html" class="block py-2.5 text-gray-700 hover:text-cricket-green text-sm">Cricket Bats</a>
+                <a href="balls.html" class="block py-2.5 text-gray-700 hover:text-cricket-green text-sm">Cricket Balls</a>
+                <a href="jerseys.html" class="block py-2.5 text-gray-700 hover:text-cricket-green text-sm">Jerseys</a>
+                <a href="trackpants.html" class="block py-2.5 text-gray-700 hover:text-cricket-green text-sm">Track Pants</a>
+                <a href="caps.html" class="block py-2.5 text-gray-700 hover:text-cricket-green text-sm">Caps</a>
+                <a href="shoes.html" class="block py-2.5 text-gray-700 hover:text-cricket-green text-sm">Cricket Shoes</a>
+                <a href="about.html" class="block py-2.5 text-gray-700 hover:text-cricket-green text-sm">About</a>
+                <a href="contact.html" class="block py-2.5 text-gray-700 hover:text-cricket-green text-sm">Contact</a>
+                <a href="https://wa.me/9118033485" target="_blank" class="block mt-3 bg-green-500 hover:bg-green-600 text-white px-4 py-2.5 rounded-lg font-semibold transition duration-300 text-center text-sm">
+                    <i class="fab fa-whatsapp mr-2"></i>Chat on WhatsApp
+                </a>
+            </div>
+        </nav>
+    </header>
+
+   
+    <!-- Hero Section -->
+    <section class="relative py-8 md:py-12 bg-gradient-to-br from-cricket-green via-green-700 to-green-900 text-white overflow-hidden">
+        <div class="absolute inset-0 bg-black bg-opacity-20"></div>
+        <div class="absolute inset-0">
+            <div class="absolute top-10 left-10 w-12 h-12 md:w-16 md:h-16 bg-cricket-gold rounded-full opacity-20 animate-pulse"></div>
+            <div class="absolute bottom-20 right-20 w-16 h-16 md:w-24 md:h-24 bg-cricket-gold rounded-full opacity-10 animate-pulse delay-1000"></div>
+            <div class="absolute top-1/2 left-1/4 w-8 h-8 md:w-12 md:h-12 bg-white rounded-full opacity-5 animate-pulse delay-500"></div>
+        </div>
+        <div class="container mx-auto px-4 relative z-10">
+            <div class="text-center max-w-4xl mx-auto">
+                <div class="inline-block bg-cricket-gold text-cricket-green px-3 md:px-4 py-1 md:py-1.5 rounded-full text-[10px] md:text-xs font-semibold mb-3 md:mb-4">
+                    Our Story Since 2010
+                </div>
+                <h1 class="text-xl md:text-3xl lg:text-4xl font-bold mb-3 md:mb-4 leading-tight">About <span class="text-cricket-gold">7070SPORTS</span></h1>
+                <p class="text-xs md:text-base lg:text-lg text-gray-200 leading-relaxed">Your trusted partner for premium cricket equipment in the historic city of Ayodhya</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="py-12 md:py-16">
+        <div class="container mx-auto px-4">
+            <!-- Our Story Section -->
+            <section class="mb-12 md:mb-16">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12 items-center">
+                    <div class="order-2 lg:order-1">
+                        <div class="inline-block bg-cricket-green text-white px-4 md:px-5 py-1.5 md:py-2 rounded-full text-[10px] md:text-xs font-semibold mb-4 md:mb-5">
+                            Our Journey
+                        </div>
+                        <h2 class="text-xl md:text-3xl lg:text-4xl font-bold text-cricket-green mb-4 md:mb-6">Our Story</h2>
+                        <div class="space-y-4 md:space-y-5 text-xs md:text-base text-gray-600 leading-relaxed">
+                            <p>
+                               Founded in 2010 by Mr. Tarif Sayed, 7070 Sports (7T7T) began as a small 48 sq. ft. outlet with a bold vision: to become a leading name in India's sportswear industry. What started as a modest setup has grown into a dynamic, nationally recognized brand known for its commitment to innovation, performance, and style.                            </p>
+                            <p>
+                               With its head office based in Mumbai, 7T7T operates a modern 8,000+ sq. ft. manufacturing facility in the Bhiwandi-Kalyan industrial zone, equipped with advanced technology and skilled craftsmanship. This strong production backbone enables us to deliver high-quality, performance-driven sportswear tailored to meet the needs of athletes and active individuals across the country.
+                            </p>
+                            <p>
+                               Today, 7T7T proudly serves customers through a vast retail network of over 500 stores across India, offering accessible, durable, and stylish sportswear designed for real performance and everyday wear. In 2025, we proudly launched a new 7070 Sports franchise store in Ayodhya, further expanding our footprint and bringing our trusted products to one of India’s most iconic and rapidly growing cities
+                            </p>
+                            <p>
+                                Today, we are proud to be Ayodhya's most trusted cricket equipment store, serving thousands of customers from beginners to professional players. Our commitment to quality, expertise, and customer service has made us the go-to destination for cricket gear in the region.
+                            </p>>
+                        </div>
+                        
+                        <div class="mt-6 md:mt-7 p-4 md:p-5 bg-cricket-green/5 rounded-xl md:rounded-2xl border-l-4 border-cricket-green">
+                            <div class="flex items-center mb-3 md:mb-4">
+                                <i class="fas fa-quote-left text-cricket-green text-lg md:text-2xl mr-3 md:mr-4"></i>
+                                <h3 class="text-base md:text-lg font-bold text-cricket-green">Our Mission</h3>
+                            </div>
+                            <p class="text-gray-700 italic leading-relaxed text-xs md:text-sm">
+                                "To provide cricket enthusiasts in Ayodhya and surrounding areas with the finest quality cricket equipment at affordable prices, while promoting the sport and nurturing young talent in our community."
+                            </p>
+                        </div>
+                    </div>
+                    <div class="order-1 lg:order-2">
+                        <div class="relative flex justify-center items-center">
+                            <div class="absolute inset-0 bg-cricket-green rounded-3xl transform rotate-6 opacity-20"></div>
+                            <div class="absolute inset-0 bg-cricket-gold rounded-3xl transform -rotate-3 opacity-10"></div>
+                            <img src="/photos/bag.jpg" alt="7070Sports Ayodhya store" class="relative w-full rounded-3xl shadow-2xl">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Values Section -->
+            <section class="mb-10 md:mb-12">
+                <div class="text-center mb-10 md:mb-12">
+                    <div class="inline-block bg-cricket-green text-white px-4 md:px-5 py-1.5 md:py-2 rounded-full text-[10px] md:text-xs font-semibold mb-4 md:mb-5">
+                        What Drives Us
+                    </div>
+                    <h2 class="text-xl md:text-3xl lg:text-4xl font-bold text-cricket-green mb-4 md:mb-5">Our Core Values</h2>
+                    <p class="text-sm md:text-base lg:text-lg text-gray-600 max-w-3xl mx-auto leading-relaxed">
+                        The principles that guide everything we do and shape our commitment to excellence
+                    </p>
+                </div>
+                
+                <div class="relative">
+                    <div id="values-slider" class="overflow-hidden">
+                        <div id="values-track" class="flex transition-transform duration-500 ease-in-out">
+                            <div class="flex-shrink-0 w-full md:w-1/2 lg:w-1/4 px-2">
+                                <div class="group text-center p-6 md:p-8 bg-white rounded-xl md:rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-3 h-full border-2 border-cricket-green">
+                                    <div class="bg-gradient-to-br from-cricket-green to-green-700 text-white w-14 h-14 md:w-16 md:h-16 rounded-full flex items-center justify-center mx-auto mb-4 md:mb-5 group-hover:scale-110 transition duration-300">
+                                        <i class="fas fa-star text-xl md:text-2xl"></i>
+                                    </div>
+                                    <h3 class="text-base md:text-lg lg:text-xl font-bold mb-3 md:mb-4 text-cricket-green">Quality Excellence</h3>
+                                    <p class="text-gray-600 leading-relaxed text-xs md:text-sm">We source only the finest cricket equipment from trusted manufacturers, ensuring every product meets our high standards</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex-shrink-0 w-full md:w-1/2 lg:w-1/4 px-2">
+                                <div class="group text-center p-6 md:p-8 bg-white rounded-xl md:rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-3 h-full border-2 border-cricket-green">
+                                    <div class="bg-gradient-to-br from-cricket-green to-green-700 text-white w-14 h-14 md:w-16 md:h-16 rounded-full flex items-center justify-center mx-auto mb-4 md:mb-5 group-hover:scale-110 transition duration-300">
+                                        <i class="fas fa-handshake text-xl md:text-2xl"></i>
+                                    </div>
+                                    <h3 class="text-base md:text-lg lg:text-xl font-bold mb-3 md:mb-4 text-cricket-green">Trust & Integrity</h3>
+                                    <p class="text-gray-600 leading-relaxed text-xs md:text-sm">Building lasting relationships with our customers through honest service, transparent pricing, and reliable advice</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex-shrink-0 w-full md:w-1/2 lg:w-1/4 px-2">
+                                <div class="group text-center p-6 md:p-8 bg-white rounded-xl md:rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-3 h-full border-2 border-cricket-green">
+                                    <div class="bg-gradient-to-br from-cricket-green to-green-700 text-white w-14 h-14 md:w-16 md:h-16 rounded-full flex items-center justify-center mx-auto mb-4 md:mb-5 group-hover:scale-110 transition duration-300">
+                                        <i class="fas fa-users text-xl md:text-2xl"></i>
+                                    </div>
+                                    <h3 class="text-base md:text-lg lg:text-xl font-bold mb-3 md:mb-4 text-cricket-green">Community Focus</h3>
+                                    <p class="text-gray-600 leading-relaxed text-xs md:text-sm">Supporting local cricket development, youth programs, and fostering the growth of cricket in Ayodhya</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex-shrink-0 w-full md:w-1/2 lg:w-1/4 px-2">
+                                <div class="group text-center p-6 md:p-8 bg-white rounded-xl md:rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-3 h-full border-2 border-cricket-green">
+                                    <div class="bg-gradient-to-br from-cricket-green to-green-700 text-white w-14 h-14 md:w-16 md:h-16 rounded-full flex items-center justify-center mx-auto mb-4 md:mb-5 group-hover:scale-110 transition duration-300">
+                                        <i class="fas fa-trophy text-xl md:text-2xl"></i>
+                                    </div>
+                                    <h3 class="text-base md:text-lg lg:text-xl font-bold mb-3 md:mb-4 text-cricket-green">Continuous Excellence</h3>
+                                    <p class="text-gray-600 leading-relaxed text-xs md:text-sm">Striving for excellence in products, service, and customer satisfaction while continuously improving our offerings</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                     <!-- Dots Navigation  -->
+                    <div id="values-dots" class="flex justify-center mt-6 gap-2 hidden">
+                        <button class="w-2 h-2 rounded-full bg-cricket-green"></button>
+                        <button class="w-2 h-2 rounded-full bg-gray-300"></button>
+                        <button class="w-2 h-2 rounded-full bg-gray-300"></button>
+                        <button class="w-2 h-2 rounded-full bg-gray-300"></button>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Team Section -->
+            <section class="mb-10 md:mb-12">
+                <div class="text-center mb-10 md:mb-12">
+                    <div class="inline-block bg-cricket-green text-white px-4 md:px-5 py-1.5 md:py-2 rounded-full text-[10px] md:text-xs font-semibold mb-4 md:mb-5">
+                        Meet Our Experts
+                    </div>
+                    <h2 class="text-xl md:text-3xl lg:text-4xl font-bold text-cricket-green mb-4 md:mb-5">Our Team</h2>
+                    <p class="text-sm md:text-base lg:text-lg text-gray-600 max-w-3xl mx-auto leading-relaxed">
+                        The passionate cricket enthusiasts and experts behind 7070Sports
+                    </p>
+                </div>
+                
+                <div class="relative">
+                    <div id="team-slider" class="overflow-hidden">
+                        <div id="team-track" class="flex transition-transform duration-500 ease-in-out">
+                            <div class="flex-shrink-0 w-full md:w-1/2 lg:w-1/3 px-2">
+                                <div class="group bg-white rounded-xl md:rounded-2xl shadow-lg p-6 md:p-8 text-center hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-3 h-full border-2 border-cricket-green">
+                                    <div class="relative mb-4 md:mb-6">
+                                        <div class="absolute inset-0 bg-cricket-green rounded-full opacity-20 group-hover:scale-110 transition duration-300"></div>
+                                        <img src="/photos/event/tarif1.jpg" alt="Founder" class="relative w-24 h-24 md:w-32 md:h-32 rounded-full mx-auto border-4 border-cricket-green object-cover">
+                                    </div>
+                                    <h3 class="text-lg md:text-2xl font-bold mb-2 text-cricket-green">Mr. Tarif Sayed </h3>
+                                    <p class="text-cricket-gold font-semibold mb-2 md:mb-3 text-sm md:text-base">Founder & CEO</p>
+                                    <p class="text-gray-600 leading-relaxed mb-3 md:mb-4 text-xs md:text-sm">Founder of 7070 SPORTS, with 15+ years championing tennis cricket through specialized gear and sportswear.</p>
+                                    <div class="flex justify-center space-x-3">
+                                        <a href="https://www.facebook.com/share/177by5np3W/" class="text-cricket-green hover:text-cricket-gold transition duration-300">
+                                            <i class="fab fa-facebook text-lg md:text-xl"></i>
+                                        </a>
+                                        <a href="https://www.instagram.com/tarif_sayed?igsh=MTF3b3NvaXI3YmV1Ng==" class="text-cricket-green hover:text-cricket-gold transition duration-300">
+                                            <i class="fab fa-instagram text-lg md:text-xl"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="flex-shrink-0 w-full md:w-1/2 lg:w-1/3 px-2">
+                                <div class="group bg-white rounded-xl md:rounded-2xl shadow-lg p-6 md:p-8 text-center hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-3 h-full border-2 border-cricket-green">
+                                    <div class="relative mb-4 md:mb-6">
+                                        <div class="absolute inset-0 bg-cricket-green rounded-full opacity-20 group-hover:scale-110 transition duration-300"></div>
+                                        <img src="/photos/event/see.jpg" alt="Store Manager" class="relative w-24 h-24 md:w-32 md:h-32 rounded-full mx-auto border-4 border-cricket-green object-cover">
+                                    </div>
+                                    <h3 class="text-lg md:text-2xl font-bold mb-2 text-cricket-green">Seezan Abidi</h3>
+                                    <p class="text-cricket-gold font-semibold mb-2 md:mb-3 text-sm md:text-base">Store Manager</p>
+                                    <p class="text-gray-600 leading-relaxed mb-3 md:mb-4 text-xs md:text-sm">Cricket enthusiast with expertise in equipment selection and customer service. Ensures every customer finds the perfect gear.</p>
+                                    <div class="flex justify-center space-x-3">
+                                        <a href="https://www.facebook.com/share/1GnJq1oi9a/" class="text-cricket-green hover:text-cricket-gold transition duration-300">
+                                            <i class="fab fa-facebook text-lg md:text-xl"></i>
+                                        </a>
+                                        <a href="https://www.instagram.com/7070sports_ayodhya_?igsh=MWV1dXJraG5iMWJx" class="text-cricket-green hover:text-cricket-gold transition duration-300">
+                                            <i class="fab fa-instagram text-lg md:text-xl"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="flex-shrink-0 w-full md:w-1/2 lg:w-1/3 px-2">
+                                <div class="group bg-white rounded-xl md:rounded-2xl shadow-lg p-6 md:p-8 text-center hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-3 h-full border-2 border-cricket-green">
+                                    <div class="relative mb-4 md:mb-6">
+                                        <div class="absolute inset-0 bg-cricket-green rounded-full opacity-20 group-hover:scale-110 transition duration-300"></div>
+                                        <img src="/photos/event/imran.jpg" alt="Cricket Expert" class="relative w-24 h-24 md:w-32 md:h-32 rounded-full mx-auto border-4 border-cricket-green object-cover">
+                                    </div>
+                                    <h3 class="text-lg md:text-2xl font-bold mb-2 text-cricket-green">Mr. Imran Haider </h3>
+                                    <p class="text-cricket-gold font-semibold mb-2 md:mb-3 text-sm md:text-base">Product Marketing Manger </p>
+                                    <p class="text-gray-600 leading-relaxed mb-3 md:mb-4 text-xs md:text-sm">Specializes in go-to-market strategy and consumer engagement, translating product value into impactful brand experiences.</p>
+                                    <div class="flex justify-center space-x-3">
+                                        <a href="https://www.facebook.com/share/1aPPSo2KWS/" class="text-cricket-green hover:text-cricket-gold transition duration-300">
+                                            <i class="fab fa-facebook text-lg md:text-xl"></i>
+                                        </a>
+                                        <a href="https://www.instagram.com/haider5491?igsh=MWJscDZjOHVpaW15NQ==" class="text-cricket-green hover:text-cricket-gold transition duration-300">
+                                            <i class="fab fa-instagram text-lg md:text-xl"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                     <!-- Dots Navigation  -->
+                    <div id="team-dots" class="flex justify-center mt-6 gap-2 hidden">
+                        <button class="w-2 h-2 rounded-full bg-cricket-green"></button>
+                        <button class="w-2 h-2 rounded-full bg-gray-300"></button>
+                        <button class="w-2 h-2 rounded-full bg-gray-300"></button>
+                    </div>
+                </div>
+            </section>
+
+
+            <!-- Why Choose Us Section -->
+            <section class="mb-10 md:mb-12">
+                <div class="text-center mb-16">
+                    <div class="inline-block bg-cricket-green text-white px-4 md:px-5 py-1.5 md:py-2 rounded-full text-[10px] md:text-xs font-semibold mb-4 md:mb-5">
+                        Our Advantages
+                    </div>
+                    <h2 class="text-xl md:text-3xl lg:text-4xl font-bold text-cricket-green mb-4 md:mb-5">Why Choose 7070Sports?</h2>
+                    <p class="text-sm md:text-base lg:text-lg text-gray-600 max-w-3xl mx-auto leading-relaxed">
+                        What makes us Ayodhya's preferred cricket equipment store and trusted partner for cricket enthusiasts
+                    </p>
+                </div>
+                
+                <div class="relative">
+                    <div id="why-choose-slider" class="overflow-hidden">
+                        <div id="why-choose-track" class="flex transition-transform duration-500 ease-in-out">
+                            <div class="flex-shrink-0 w-full md:w-1/2 px-2">
+                                <div class="flex items-start p-6 bg-white rounded-2xl shadow-lg hover:shadow-2xl transition duration-500 h-full  border-2 border-cricket-green">
+                                    <div class="bg-cricket-green text-white w-16 h-16 rounded-full flex items-center justify-center flex-shrink-0 mr-6">
+                                        <i class="fas fa-medal text-2xl"></i>
+                                    </div>
+                                    <div>
+                                        <h3 class="text-2xl font-bold mb-3 text-cricket-green">Quality Guaranteed</h3>
+                                        <p class="text-gray-600 leading-relaxed">All our products come with quality assurance and manufacturer warranties. We stand behind every item we sell with confidence.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="flex-shrink-0 w-full md:w-1/2 px-2">
+                                <div class="flex items-start p-6 bg-white rounded-2xl shadow-lg hover:shadow-2xl transition duration-500 h-full  border-2 border-cricket-green">
+                                    <div class="bg-cricket-green text-white w-16 h-16 rounded-full flex items-center justify-center flex-shrink-0 mr-6">
+                                        <i class="fas fa-user-tie text-2xl"></i>
+                                    </div>
+                                    <div>
+                                        <h3 class="text-2xl font-bold mb-3 text-cricket-green">Expert Guidance</h3>
+                                        <p class="text-gray-600 leading-relaxed">Our team includes former players who provide professional guidance to help you choose equipment that matches your playing style and skill level.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="flex-shrink-0 w-full md:w-1/2 px-2">
+                                <div class="flex items-start p-6 bg-white rounded-2xl shadow-lg hover:shadow-2xl transition duration-500 h-full  border-2 border-cricket-green">
+                                    <div class="bg-cricket-green text-white w-16 h-16 rounded-full flex items-center justify-center flex-shrink-0 mr-6">
+                                        <i class="fas fa-rupee-sign text-2xl"></i>
+                                    </div>
+                                    <div>
+                                        <h3 class="text-2xl font-bold mb-3 text-cricket-green">Competitive Pricing</h3>
+                                        <p class="text-gray-600 leading-relaxed">Best prices in Ayodhya with regular discounts, seasonal offers, and special deals for teams and bulk purchases.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="flex-shrink-0 w-full md:w-1/2 px-2">
+                                <div class="flex items-start p-6 bg-white rounded-2xl shadow-lg hover:shadow-2xl transition duration-500 h-full  border-2 border-cricket-green">
+                                    <div class="bg-cricket-green text-white w-16 h-16 rounded-full flex items-center justify-center flex-shrink-0 mr-6">
+                                        <i class="fas fa-shipping-fast text-2xl"></i>
+                                    </div>
+                                    <div>
+                                        <h3 class="text-2xl font-bold mb-3 text-cricket-green">Fast & Reliable Service</h3>
+                                        <p class="text-gray-600 leading-relaxed">Quick delivery, efficient customer service, and comprehensive after-sales support for all your cricket equipment needs.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="flex-shrink-0 w-full md:w-1/2 px-2">
+                                <div class="flex items-start p-6 bg-white rounded-2xl shadow-lg hover:shadow-2xl transition duration-500 h-full  border-2 border-cricket-green">
+                                    <div class="bg-cricket-green text-white w-16 h-16 rounded-full flex items-center justify-center flex-shrink-0 mr-6">
+                                        <i class="fas fa-tools text-2xl"></i>
+                                    </div>
+                                    <div>
+                                        <h3 class="text-2xl font-bold mb-3 text-cricket-green">Customization Services</h3>
+                                        <p class="text-gray-600 leading-relaxed">Custom bat gripping, jersey printing, equipment personalization, and team uniform services to meet your specific requirements.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="flex-shrink-0 w-full md:w-1/2 px-2">
+                                <div class="flex items-start p-6 bg-white rounded-2xl shadow-lg hover:shadow-2xl transition duration-500 h-full  border-2 border-cricket-green">
+                                    <div class="bg-cricket-green text-white w-16 h-16 rounded-full flex items-center justify-center flex-shrink-0 mr-6">
+                                        <i class="fas fa-heart text-2xl"></i>
+                                    </div>
+                                    <div>
+                                        <h3 class="text-2xl font-bold mb-3 text-cricket-green">Community Support</h3>
+                                        <p class="text-gray-600 leading-relaxed">Active support for local cricket tournaments, youth development programs, and community cricket initiatives in Ayodhya.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                     <!-- Dots Navigation  -->
+                    <div id="why-choose-dots" class="flex justify-center mt-6 gap-2 hidden">
+                        <button class="w-2 h-2 rounded-full bg-cricket-green"></button>
+                        <button class="w-2 h-2 rounded-full bg-gray-300"></button>
+                        <button class="w-2 h-2 rounded-full bg-gray-300"></button>
+                        <button class="w-2 h-2 rounded-full bg-gray-300"></button>
+                        <button class="w-2 h-2 rounded-full bg-gray-300"></button>
+                        <button class="w-2 h-2 rounded-full bg-gray-300"></button>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Call to Action -->
+            <section class="text-center">
+                <div class="bg-gradient-to-r from-cricket-green to-green-800 text-white rounded-2xl md:rounded-3xl p-8 md:p-10">
+                    <h2 class="text-xl md:text-3xl lg:text-4xl font-bold mb-4 md:mb-5">Ready to Elevate Your Game?</h2>
+                    <p class="text-sm md:text-base lg:text-lg mb-6 md:mb-7 max-w-2xl mx-auto leading-relaxed">
+                        Visit our store today and discover why thousands of cricket enthusiasts trust 7070Sports for their equipment needs.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-3 md:gap-4 justify-center">
+                        <a href="contact.html" class="bg-cricket-gold text-cricket-green px-6 md:px-7 py-3 md:py-3.5 rounded-lg font-bold text-sm md:text-base hover:bg-yellow-400 transition duration-300 transform hover:scale-105">
+                            Visit Our Store
+                        </a>
+                        <a href="index.html#categories" class="border-2 border-white text-white px-6 md:px-7 py-3 md:py-3.5 rounded-lg font-bold text-sm md:text-base hover:bg-white hover:text-cricket-green transition duration-300">
+                            Browse Products
+                        </a>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-cricket-green text-white py-6 md:py-12 lg:py-16">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-8 lg:gap-12">
+                <div class="col-span-2 md:col-span-1">
+                    <div class="flex items-center space-x-2 mb-3 md:mb-6">
+                        <div class="bg-cricket-gold p-1.5 md:p-2 rounded-full">
+                            <i class="fas fa-baseball-ball text-cricket-green text-sm md:text-xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-base md:text-2xl font-bold">7070SPORTS</h3>
+                            <p class="text-[9px] md:text-sm text-gray-300 -mt-1">AYODHYA</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-300 mb-3 md:mb-6 leading-relaxed text-[10px] md:text-base hidden md:block">Your trusted partner for premium cricket equipment in Ayodhya.</p>
+                    <div class="flex space-x-2 md:space-x-4">
+                        <a href="#" class="bg-cricket-gold text-cricket-green p-1.5 md:p-3 rounded-full hover:bg-yellow-400 transition duration-300">
+                            <i class="fab fa-facebook-f text-xs md:text-base"></i>
+                        </a>
+                        <a href="#" class="bg-cricket-gold text-cricket-green p-1.5 md:p-3 rounded-full hover:bg-yellow-400 transition duration-300">
+                            <i class="fab fa-instagram text-xs md:text-base"></i>
+                        </a>
+                        <a href="#" class="bg-cricket-gold text-cricket-green p-1.5 md:p-3 rounded-full hover:bg-yellow-400 transition duration-300">
+                            <i class="fab fa-twitter text-xs md:text-base"></i>
+                        </a>
+                        <a href="#" class="bg-cricket-gold text-cricket-green p-1.5 md:p-3 rounded-full hover:bg-yellow-400 transition duration-300">
+                            <i class="fab fa-youtube text-xs md:text-base"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h4 class="text-sm md:text-xl font-bold mb-2 md:mb-6">Quick Links</h4>
+                    <ul class="space-y-1 md:space-y-3">
+                        <li><a href="index.html" class="text-gray-300 hover:text-cricket-gold transition duration-300 flex items-center text-[10px] md:text-base"><i class="fas fa-chevron-right mr-1 md:mr-2 text-[8px] md:text-xs"></i>Home</a></li>
+                        <li><a href="about.html" class="text-gray-300 hover:text-cricket-gold transition duration-300 flex items-center text-[10px] md:text-base"><i class="fas fa-chevron-right mr-1 md:mr-2 text-[8px] md:text-xs"></i>About Us</a></li>
+                        <li><a href="contact.html" class="text-gray-300 hover:text-cricket-gold transition duration-300 flex items-center text-[10px] md:text-base"><i class="fas fa-chevron-right mr-1 md:mr-2 text-[8px] md:text-xs"></i>Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-sm md:text-xl font-bold mb-2 md:mb-6">Categories</h4>
+                    <ul class="space-y-1 md:space-y-3">
+                        <li><a href="bats.html" class="text-gray-300 hover:text-cricket-gold transition duration-300 flex items-center text-[10px] md:text-base"><i class="fas fa-chevron-right mr-1 md:mr-2 text-[8px] md:text-xs"></i>Bats</a></li>
+                        <li><a href="balls.html" class="text-gray-300 hover:text-cricket-gold transition duration-300 flex items-center text-[10px] md:text-base"><i class="fas fa-chevron-right mr-1 md:mr-2 text-[8px] md:text-xs"></i>Balls</a></li>
+                        <li><a href="jerseys.html" class="text-gray-300 hover:text-cricket-gold transition duration-300 flex items-center text-[10px] md:text-base"><i class="fas fa-chevron-right mr-1 md:mr-2 text-[8px] md:text-xs"></i>Jerseys</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-sm md:text-xl font-bold mb-2 md:mb-6">Contact</h4>
+                    <div class="space-y-1.5 md:space-y-4 text-gray-300">
+                        <div class="flex items-start">
+                            <i class="fas fa-map-marker-alt mr-1.5 md:mr-3 mt-0.5 md:mt-1 text-cricket-gold text-[10px] md:text-base"></i>
+                            <p class="text-[10px] md:text-base">Ram Path, Ayodhya</p>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-phone mr-1.5 md:mr-3 text-cricket-gold text-[10px] md:text-base"></i>
+                            <p class="text-[10px] md:text-base">+91 7070-123-456</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="border-t border-green-600 mt-4 md:mt-12 pt-3 md:pt-8 text-center">
+                <p class="text-gray-300 text-[9px] md:text-base">&copy; 2025 7070SPORTS AYODHYA. All rights reserved.</p>
+                                <p class="text-gray-300 text-[9px] md:text-base">Designed by Mohd Taqi Mehdi.</p>
+
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile Menu Toggle
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Counter animation
+        function animateCounters() {
+            const counters = document.querySelectorAll('.counter');
+            counters.forEach(counter => {
+                const target = parseInt(counter.getAttribute('data-target'));
+                const increment = target / 100;
+                let current = 0;
+                
+                const updateCounter = () => {
+                    if (current < target) {
+                        current += increment;
+                        counter.textContent = Math.floor(current);
+                        requestAnimationFrame(updateCounter);
+                    } else {
+                        counter.textContent = target;
+                    }
+                };
+                
+                updateCounter();
+            });
+        }
+
+        // Intersection Observer for counter animation
+        const statsSection = document.querySelector('section:has(.counter)'); // Select the section containing a counter
+        if (statsSection) {
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        animateCounters();
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.5 }); // Trigger when 50% of the section is visible
+            
+            observer.observe(statsSection);
+        }
+
+        function initHorizontalSlider(sliderId, trackId, dotsId, itemCount) {
+            const slider = document.getElementById(sliderId);
+            const track = document.getElementById(trackId);
+            const dots = document.getElementById(dotsId);
+            
+            if (!slider || !track || !dots) return;
+            
+            let currentIndex = 0;
+            let autoScrollInterval;
+            let slidesPerView = 1; // Default for mobile
+
+            function updateSlider() {
+                if (window.innerWidth >= 1024) {
+                    slidesPerView = itemCount === 4 ? 4 : itemCount === 3 ? 3 : 2;
+                } else if (window.innerWidth >= 768) {
+                    slidesPerView = 2;
+                } else {
+                    slidesPerView = 1;
+                }
+                
+                const slideWidth = 100 / slidesPerView;
+                track.style.transform = `translateX(-${currentIndex * slideWidth}%)`;
+                
+                // Update dots
+                const dotButtons = dots.querySelectorAll('button');
+                dotButtons.forEach((dot, index) => {
+                    if (index === currentIndex) {
+                        dot.classList.remove('bg-gray-300');
+                        dot.classList.add('bg-cricket-green');
+                    } else {
+                        dot.classList.remove('bg-cricket-green');
+                        dot.classList.add('bg-gray-300');
+                    }
+                });
+            }
+            
+            function nextSlide() {
+                const maxIndex = itemCount - slidesPerView;
+                // Calculate the correct next index, ensuring it doesn't exceed the bounds
+                const nextIndex = currentIndex + 1;
+                if (nextIndex <= maxIndex) {
+                    currentIndex = nextIndex;
+                } else {
+                    currentIndex = 0; // Loop back to the beginning
+                }
+                updateSlider();
+            }
+            
+            function startAutoScroll() {
+                stopAutoScroll();
+                autoScrollInterval = setInterval(nextSlide, 3000);
+            }
+            
+            function stopAutoScroll() {
+                if (autoScrollInterval) {
+                    clearInterval(autoScrollInterval);
+                }
+            }
+            
+            // Dot navigation
+            const dotButtons = dots.querySelectorAll('button');
+            dotButtons.forEach((dot, index) => {
+                dot.addEventListener('click', () => {
+                    currentIndex = index;
+                    updateSlider();
+                    startAutoScroll(); // Restart auto-scroll on manual navigation
+                });
+            });
+            
+            // Handle window resize
+            window.addEventListener('resize', () => {
+                updateSlider();
+                startAutoScroll(); // Restart auto-scroll on resize
+            });
+            
+            // Initialize
+            updateSlider();
+            startAutoScroll();
+        }
+        
+        // Initialize horizontal sliders
+        initHorizontalSlider('values-slider', 'values-track', 'values-dots', 4);
+        initHorizontalSlider('team-slider', 'team-track', 'team-dots', 3);
+        initHorizontalSlider('why-choose-slider', 'why-choose-track', 'why-choose-dots', 6);
+        initHorizontalSlider('stats-slider', 'stats-track', 'stats-dots', 4);
+    </script>
+</body>
+</html>

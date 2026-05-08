@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Shop 7T7T cricket bats – durable, high-performance bats for every player. Explore the best cricket bat brands online at 7070 Sports!">
-     <link rel="shortcut icon" href="/favicon_io/favicon.ico" type="image/x-icon">
+     <link rel="shortcut icon" href="./favicon_io/favicon.ico" type="image/x-icon">
     <title>7070 cricket bat | 7t7t bats in India </title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
@@ -27,7 +27,7 @@
     <style>
         .bat-carousel { position: relative; width: 100%; overflow: hidden; }
         .bat-carousel .slides { display: flex; transition: transform 0.4s ease; }
-        .bat-carousel .slides img { width: 100%; flex-shrink: 0; object-fit: cover; aspect-ratio: 1/1; }
+        .bat-carousel .slides img { width: 100%; flex-shrink: 0; object-fit: contain; aspect-ratio: 1/1; }
         .bat-carousel .prev, .bat-carousel .next {
             position: absolute; top: 50%; transform: translateY(-50%); z-index: 10;
             background: rgba(0,0,0,0.45); color: #fff; border: none; cursor: pointer;
@@ -51,7 +51,7 @@
             <div class="flex justify-between items-center">
                 <div class="flex items-center space-x-2 md:space-x-3">
                     <div class="p-1.5 md:p-2 rounded-full">
-                        <img src="/photos/logo-removebg-preview.png" alt="7070SPORTS Logo" class="w-8 h-8 md:w-10 md:h-10 object-contain ">                    </div>
+                        <img src="./photos/logo-removebg-preview.png" alt="7070SPORTS Logo" class="w-8 h-8 md:w-10 md:h-10 object-contain ">                    </div>
                     <div>
                         <h1 class="text-lg md:text-2xl font-bold text-cricket-green">7070SPORTS</h1>
                         <p class="text-[10px] md:text-xs text-gray-600 -mt-1">AYODHYA</p>
@@ -199,11 +199,11 @@
                 <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition duration-300 transform hover:-translate-y-2">
                     <div class="bat-carousel" data-carousel>
                         <div class="slides">
-                            <img src="/photos/bat/gold edition.jpg" alt="Gold Edition Cricket Bat">
-                            <img src="/photos/bat/gold edition1.jpg" alt="Gold Edition Cricket Bat View 2">
-                            <img src="/photos/bat/gold edition2.jpg" alt="Gold Edition Cricket Bat View 3">
-                            <img src="/photos/bat/gold edition3.jpg" alt="Gold Edition Cricket Bat View 4">
-                            <img src="/photos/bat/gold edition4.jpg" alt="Gold Edition Cricket Bat View 5">
+                            <img src="./photos/bat/gold edition.jpg" alt="Gold Edition Cricket Bat">
+                            <img src="./photos/bat/gold edition1.jpg" alt="Gold Edition Cricket Bat View 2">
+                            <img src="./photos/bat/gold edition2.jpg" alt="Gold Edition Cricket Bat View 3">
+                            <img src="./photos/bat/gold edition3.jpg" alt="Gold Edition Cricket Bat View 4">
+                            <img src="./photos/bat/gold edition4.jpg" alt="Gold Edition Cricket Bat View 5">
                         </div>
                         <button class="prev" onclick="slideCarousel(this,-1)">&#10094;</button>
                         <button class="next" onclick="slideCarousel(this,1)">&#10095;</button>
@@ -211,7 +211,7 @@
                         <div class="absolute top-2 right-2 bg-cricket-green text-white px-2 py-1 rounded text-[10px] md:text-xs font-semibold z-20">Best Seller</div>
                     </div>
                     <div class="p-3 md:p-6">
-                        <h3 class="text-sm md:text-lg font-semibold mb-1 md:mb-2">Gold Edition</h3>
+                        <a href="gold-edition.html" class="hover:text-cricket-green transition duration-300"><h3 class="text-sm md:text-lg font-semibold mb-1 md:mb-2">Gold Edition</h3></a>
                         <div class="flex items-center mb-1 md:mb-2">
                             <div class="text-cricket-gold mr-2 text-xs md:text-base">
                                 <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
@@ -221,9 +221,14 @@
                         <p class="text-gray-600 mb-2 md:mb-4 text-[11px] md:text-sm hidden md:block">Premium Gold Edition willow bat</p>
                         <div class="flex flex-col gap-2">
                             <span class="text-lg md:text-2xl font-bold text-cricket-green">₹7,000</span>
-                            <a href="https://wa.me/9118033485?text=Hi, Gold Edition(₹7,000)" target="_blank" class="bg-cricket-green text-white px-3 md:px-1 py-1 rounded hover:bg-green-600 transition duration-300 text-center text-xs md:text-xs font-semibold flex items-center justify-center gap-1 md:gap-2">
-                                <i class="fab fa-whatsapp text-sm md:text-base"></i> WhatsApp
-                            </a>
+                            <div class="flex gap-2">
+                                <a href="gold-edition.html" class="bg-gray-800 text-white px-2 py-1.5 rounded hover:bg-gray-900 transition duration-300 text-center text-[10px] md:text-xs font-semibold flex-1 flex items-center justify-center">
+                                    View Details
+                                </a>
+                                <a href="https://wa.me/9118033485?text=Hi, Gold Edition(₹7,000)" target="_blank" class="bg-cricket-green text-white px-2 py-1.5 rounded hover:bg-green-600 transition duration-300 text-center text-[10px] md:text-xs font-semibold flex items-center justify-center gap-1 flex-1">
+                                    <i class="fab fa-whatsapp text-xs md:text-sm"></i> WhatsApp
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -231,7 +236,7 @@
                 <!-- Product 2 -->
                 <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition duration-300 transform hover:-translate-y-2">
                     <div class="relative aspect-[3/3]">
-                        <img src="/photos/bat/pro edition.jpg" alt="Elite Cricket Bat" class="w-full h-full object-cover">
+                        <img src="./photos/bat/pro edition.jpg" alt="Elite Cricket Bat" class="w-full h-full object-cover">
                     </div>
                     <div class="p-3 md:p-6">
                         <h3 class="text-sm md:text-lg font-semibold mb-1 md:mb-2">Pro Edition</h3>
@@ -260,9 +265,9 @@
                 <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition duration-300 transform hover:-translate-y-2">
                     <div class="bat-carousel" data-carousel>
                         <div class="slides">
-                            <img src="/photos/bat/ONE SIDE HERO EDITION.jpg" alt="One Side Hero Edition Cricket Bat">
-                            <img src="/photos/bat/ONE SIDE HERO EDITION1.jpg" alt="One Side Hero Edition View 2">
-                            <img src="/photos/bat/ONE SIDE HERO EDITION2.jpg" alt="One Side Hero Edition View 3">
+                            <img src="./photos/bat/ONE SIDE HERO EDITION.jpg" alt="One Side Hero Edition Cricket Bat">
+                            <img src="./photos/bat/ONE SIDE HERO EDITION1.jpg" alt="One Side Hero Edition View 2">
+                            <img src="./photos/bat/ONE SIDE HERO EDITION2.jpg" alt="One Side Hero Edition View 3">
                         </div>
                         <button class="prev" onclick="slideCarousel(this,-1)">&#10094;</button>
                         <button class="next" onclick="slideCarousel(this,1)">&#10095;</button>
@@ -290,7 +295,7 @@
                 <!-- Product 4 -->
                 <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition duration-300 transform hover:-translate-y-2">
                     <div class="relative aspect-[3/3]">
-                        <img src="/photos/bat/Kp destroyer.jpg" alt="Practice Cricket Bat" class="w-full h-full object-cover">
+                        <img src="./photos/bat/Kp destroyer.jpg" alt="Practice Cricket Bat" class="w-full h-full object-cover">
                     </div>
                     <div class="p-3 md:p-6">
                         <h3 class="text-sm md:text-lg font-semibold mb-1 md:mb-2">KP Destroyer Ed.</h3>
@@ -319,7 +324,7 @@
                 <!-- Product 5 -->
                 <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition duration-300 transform hover:-translate-y-2">
                     <div class="relative aspect-[3/3]">
-                        <img src="/photos/bat/bahubali.jpg" alt="Kashmir Willow Bat" class="w-full h-full object-cover">
+                        <img src="./photos/bat/bahubali.jpg" alt="Kashmir Willow Bat" class="w-full h-full object-cover">
                     </div>
                     <div class="p-3 md:p-6">
                         <h3 class="text-sm md:text-lg font-semibold mb-1 md:mb-2">Bahubali Ed.</h3>
@@ -347,7 +352,7 @@
                 <!-- Product 6 -->
                 <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition duration-300 transform hover:-translate-y-2">
                     <div class="relative aspect-[3/3]">
-                        <img src="/photos/bat/nd-7.jpg" alt="Heavy Cricket Bat" class="w-full h-full object-cover">
+                        <img src="./photos/bat/nd-7.jpg" alt="Heavy Cricket Bat" class="w-full h-full object-cover">
                     </div>
                     <div class="p-3 md:p-6">
                         <h3 class="text-sm md:text-lg font-semibold mb-1 md:mb-2">ND-7 Ed.</h3>
@@ -375,7 +380,7 @@
                 <!-- Product 7 -->
                 <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition duration-300 transform hover:-translate-y-2">
                     <div class="relative aspect-[3/3]">
-                        <img src="/photos/bat/black.jpg" alt="Light Weight Bat" class="w-full h-full object-cover">
+                        <img src="./photos/bat/black.jpg" alt="Light Weight Bat" class="w-full h-full object-cover">
                     </div>
                     <div class="p-3 md:p-6">
                         <h3 class="text-sm md:text-lg font-semibold mb-1 md:mb-2">Black Edition</h3>
@@ -403,13 +408,13 @@
                 <!-- Product 8 -->
                 <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition duration-300 transform hover:-translate-y-2">
                     <div class="relative aspect-[3/3]">
-                        <img src="/photos/bat/soft tennis.jpg" alt="Custom Cricket Bat" class="w-full h-full object-cover">
+                        <img src="./photos/bat/soft tennis.jpg" alt="Custom Cricket Bat" class="w-full h-full object-cover">
                         <div class="absolute top-2 right-2 bg-red-500 text-white px-2 py-1 rounded text-[10px] md:text-xs font-semibold">
                             Custom
                         </div>
                     </div>
                     <div class="p-3 md:p-6">
-                        <h3 class="text-sm md:text-lg font-semibold mb-1 md:mb-2">Soft Tennis </h3>
+                        <a href="soft-tennis.html" class="hover:text-cricket-green transition duration-300"><h3 class="text-sm md:text-lg font-semibold mb-1 md:mb-2">Soft Tennis</h3></a>
                         <div class="flex items-center mb-1 md:mb-2">
                             <div class="text-cricket-gold mr-2 text-xs md:text-base">
                                 <i class="fas fa-star"></i>
@@ -423,10 +428,14 @@
                         <p class="text-gray-600 mb-2 md:mb-4 text-[11px] md:text-sm hidden md:block">Lightweight bats for powerful strokes</p>
                         <div class="flex flex-col gap-2">
                             <span class="text-lg md:text-2xl font-bold text-cricket-green">₹2,500</span>
-                            <a href="https://wa.me/9118033485?text=Hi, Soft Tennis Bat (₹2,500)" target="_blank" class="bg-cricket-green text-white px-3 md:px-1 py-1 rounded hover:bg-green-600 transition duration-300 text-center text-xs md:text-xs font-semibold flex items-center justify-center gap-1 md:gap-2">
-                                <i class="fab fa-whatsapp text-sm md:text-base"></i>
-                                 WhatsApp
-                            </a>
+                            <div class="flex gap-2">
+                                <a href="soft-tennis.html" class="bg-gray-800 text-white px-2 py-1.5 rounded hover:bg-gray-900 transition duration-300 text-center text-[10px] md:text-xs font-semibold flex-1 flex items-center justify-center">
+                                    View Details
+                                </a>
+                                <a href="https://wa.me/9118033485?text=Hi, Soft Tennis Bat (₹2,500)" target="_blank" class="bg-cricket-green text-white px-2 py-1.5 rounded hover:bg-green-600 transition duration-300 text-center text-[10px] md:text-xs font-semibold flex items-center justify-center gap-1 flex-1">
+                                    <i class="fab fa-whatsapp text-xs md:text-sm"></i> WhatsApp
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -435,10 +444,10 @@
                 <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition duration-300 transform hover:-translate-y-2">
                     <div class="bat-carousel" data-carousel>
                         <div class="slides">
-                            <img src="/photos/bat/BLACK MONSTER EDITION.jpg" alt="Black Monster Edition Cricket Bat">
-                            <img src="/photos/bat/BLACK MONSTER EDITION1.jpg" alt="Black Monster Edition View 2">
-                            <img src="/photos/bat/BLACK MONSTER EDITION2.jpg" alt="Black Monster Edition View 3">
-                            <img src="/photos/bat/BLACK MONSTER EDITION3.jpg" alt="Black Monster Edition View 4">
+                            <img src="./photos/bat/BLACK MONSTER EDITION.jpg" alt="Black Monster Edition Cricket Bat">
+                            <img src="./photos/bat/BLACK MONSTER EDITION1.jpg" alt="Black Monster Edition View 2">
+                            <img src="./photos/bat/BLACK MONSTER EDITION2.jpg" alt="Black Monster Edition View 3">
+                            <img src="./photos/bat/BLACK MONSTER EDITION3.jpg" alt="Black Monster Edition View 4">
                         </div>
                         <button class="prev" onclick="slideCarousel(this,-1)">&#10094;</button>
                         <button class="next" onclick="slideCarousel(this,1)">&#10095;</button>
@@ -467,10 +476,10 @@
                 <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition duration-300 transform hover:-translate-y-2">
                     <div class="bat-carousel" data-carousel>
                         <div class="slides">
-                            <img src="/photos/bat/Turf-edition.jpg" alt="Turf Edition Cricket Bat">
-                            <img src="/photos/bat/Turf-edition1.jpg" alt="Turf Edition View 2">
-                            <img src="/photos/bat/Turf-edition2.jpg" alt="Turf Edition View 3">
-                            <img src="/photos/bat/Turf-edition3.jpg" alt="Turf Edition View 4">
+                            <img src="./photos/bat/Turf-edition.jpg" alt="Turf Edition Cricket Bat">
+                            <img src="./photos/bat/Turf-edition1.jpg" alt="Turf Edition View 2">
+                            <img src="./photos/bat/Turf-edition2.jpg" alt="Turf Edition View 3">
+                            <img src="./photos/bat/Turf-edition3.jpg" alt="Turf Edition View 4">
                         </div>
                         <button class="prev" onclick="slideCarousel(this,-1)">&#10094;</button>
                         <button class="next" onclick="slideCarousel(this,1)">&#10095;</button>
@@ -562,7 +571,7 @@ If you want to feel like a professional cricketer but don't want to spend a fort
                 <div class="col-span-2 md:col-span-1">
                     <div class="flex items-center space-x-2 mb-3 md:mb-6">
                         <div class="bg-white w-8 h-8 md:w-10 md:h-10 rounded-full flex items-center justify-center p-1 shadow-lg">
-                        <img src="/photos/logo-removebg-preview.png" alt="7070SPORTS Logo" class="w-8 h-8 md:w-10 md:h-10 object-cover "></div>
+                        <img src="./photos/logo-removebg-preview.png" alt="7070SPORTS Logo" class="w-8 h-8 md:w-10 md:h-10 object-cover "></div>
                         <div>
                             <h3 class="text-base md:text-2xl font-bold">7070SPORTS</h3>
                             <p class="text-[9px] md:text-sm text-gray-300 -mt-1">AYODHYA</p>

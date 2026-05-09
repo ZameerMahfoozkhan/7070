@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Shop the 7T7T Soft Tennis Bat. Lightweight Kashmir Willow, ideal for soft tennis balls.">
+    <meta name="description" content="Shop the Professional Cricket Shoes. Grounded in Excellence. Superior grip and comfort.">
     <link rel="shortcut icon" href="./favicon_io/favicon.ico" type="image/x-icon">
-    <title>Soft Tennis Bat - 7070 Cricket Bat</title>
+    <title>Professional Cricket Shoes - 7070</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
@@ -23,7 +23,25 @@
         }
     </script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link rel="canonical" href="https://7070sportsayodhya.com/soft-tennis.html" />
+    <link rel="canonical" href="https://7070sportsayodhya.com/cricket-shoe-pro.html" />
+    <style>
+        .bat-carousel { position: relative; width: 100%; overflow: hidden; border-radius: 0.5rem; }
+        .bat-carousel .slides { display: flex; transition: transform 0.4s ease; }
+        .bat-carousel .slides img { width: 100%; flex-shrink: 0; object-fit: contain; aspect-ratio: 1/1; background: #f9fafb; }
+        .bat-carousel .prev, .bat-carousel .next {
+            position: absolute; top: 50%; transform: translateY(-50%); z-index: 10;
+            background: rgba(0,0,0,0.45); color: #fff; border: none; cursor: pointer;
+            width: 40px; height: 40px; border-radius: 50%; font-size: 18px;
+            display: flex; align-items: center; justify-content: center;
+            opacity: 0; transition: opacity 0.3s;
+        }
+        .bat-carousel:hover .prev, .bat-carousel:hover .next { opacity: 1; }
+        .bat-carousel .prev { left: 10px; }
+        .bat-carousel .next { right: 10px; }
+        .bat-carousel .dots { position: absolute; bottom: 12px; left: 50%; transform: translateX(-50%); display: flex; gap: 8px; z-index: 10; }
+        .bat-carousel .dots span { width: 10px; height: 10px; border-radius: 50%; background: rgba(0,0,0,0.3); cursor: pointer; transition: background 0.3s; border: 1px solid #fff; }
+        .bat-carousel .dots span.active { background: #FFD700; border-color: #FFD700; }
+    </style>
 </head>
 <body class="bg-gray-50 flex flex-col min-h-screen">
     <!-- Header/Navbar -->
@@ -106,9 +124,9 @@
             <nav class="text-sm text-gray-500">
                 <a href="index.html" class="hover:text-cricket-green">Home</a>
                 <span class="mx-2">/</span>
-                <a href="bats.html" class="hover:text-cricket-green">Cricket Bats</a>
+                <a href="shoes.html" class="hover:text-cricket-green">Cricket Shoes</a>
                 <span class="mx-2">/</span>
-                <span class="text-gray-800 font-semibold">Soft Tennis</span>
+                <span class="text-gray-800 font-semibold">Professional Edition</span>
             </nav>
         </div>
     </div>
@@ -118,65 +136,69 @@
         <div class="container mx-auto px-4">
             <div class="bg-white rounded-2xl shadow-xl overflow-hidden flex flex-col lg:flex-row">
                 <!-- Product Images -->
-                <div class="lg:w-1/2 p-4 md:p-8 bg-gray-50 flex items-center justify-center relative">
-                    <img src="./photos/bat/soft tennis.jpg" alt="7T7T Soft Tennis Cricket Bat" class="w-full max-w-lg object-contain aspect-square mix-blend-multiply rounded-xl shadow-md bg-white p-4">
-                    <div class="absolute top-6 right-6 bg-red-500 text-white px-3 py-1.5 rounded-md text-sm font-semibold shadow-sm">Custom</div>
+                <div class="lg:w-1/2 p-4 md:p-8 bg-gray-50 flex items-center justify-center">
+                    <div class="bat-carousel w-full max-w-lg shadow-md" data-carousel>
+                        <div class="slides">
+                            <img src="./photos/shoes/IMG-20251003-WA0067.jpg" alt="Professional Cricket Shoes View 1">
+                            <img src="./photos/shoes/IMG-20251003-WA0067-1.jpg" alt="Professional Cricket Shoes View 2">
+                            <img src="./photos/shoes/IMG-20251003-WA0067-2.jpg" alt="Professional Cricket Shoes View 3">
+                            <img src="./photos/shoes/IMG-20251003-WA0067-3.jpg" alt="Professional Cricket Shoes View 4">
+                            <img src="./photos/shoes/IMG-20251003-WA0067-4.jpg" alt="Professional Cricket Shoes View 5">
+                            <img src="./photos/shoes/IMG-20251003-WA0067-5.jpg" alt="Professional Cricket Shoes View 6">
+                        </div>
+                        <button class="prev" onclick="slideCarousel(this,-1)">&#10094;</button>
+                        <button class="next" onclick="slideCarousel(this,1)">&#10095;</button>
+                        <div class="dots"></div>
+                        <div class="absolute top-4 right-4 bg-cricket-green text-white px-3 py-1.5 rounded-md text-sm font-semibold z-20 shadow-sm">Best Seller</div>
+                    </div>
                 </div>
                 
                 <!-- Product Information -->
                 <div class="lg:w-1/2 p-6 md:p-10 lg:p-12 flex flex-col justify-center">
-                    <h1 class="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-800 mb-3">7T7T Soft Tennis Bat</h1>
+                    <h1 class="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-800 mb-3">Professional Cricket Shoes</h1>
                     
                     <div class="flex items-center gap-4 mb-6">
                         <div class="flex items-center">
                             <div class="text-cricket-gold mr-2 text-lg">
                                 <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
                             </div>
-                            <span class="text-sm text-gray-600">(8 Reviews)</span>
+                            <span class="text-sm text-gray-600">(24 Reviews)</span>
                         </div>
                         <span class="bg-green-100 text-green-800 text-xs font-semibold px-2.5 py-0.5 rounded border border-green-200">In Stock</span>
                     </div>
                     
-                    <div class="text-4xl font-bold text-cricket-green mb-8">₹2,500</div>
+                    <div class="text-4xl font-bold text-cricket-green mb-8">₹1,899</div>
                     
                     <p class="text-gray-600 mb-8 text-base leading-relaxed">
-                        Lightweight design tailored for quick strokes and agile gameplay. The 7T7T Soft Tennis Bat is the perfect companion for recreational matches and soft tennis ball play.
+                        Experience our "Grounded in Excellence" series with the Professional Edition. Designed with advanced aerodynamics for swift movement, these shoes represent the pinnacle of on-field agility.
                     </p>
                     
                     <h3 class="text-xl font-bold text-gray-800 mb-4 border-b pb-2">Specifications</h3>
                     <ul class="space-y-3 mb-10 text-gray-700">
                         <li class="flex items-start">
                             <i class="fas fa-check-circle text-cricket-green mt-1 mr-3"></i>
-                            <div><strong class="text-gray-900">Bat Type:</strong> Soft Tennis Bat</div>
+                            <div><strong class="text-gray-900">Grip:</strong> Superior Turf Grip featuring a high-traction outsole designed specifically for quick turns and sudden sprints.</div>
                         </li>
                         <li class="flex items-start">
                             <i class="fas fa-check-circle text-cricket-green mt-1 mr-3"></i>
-                            <div><strong class="text-gray-900">Weight:</strong> 800 to 950 Grams</div>
+                            <div><strong class="text-gray-900">Cushioning:</strong> Comfort Cushioning with high-density foam midsoles to absorb impact and reduce foot fatigue.</div>
                         </li>
                         <li class="flex items-start">
                             <i class="fas fa-check-circle text-cricket-green mt-1 mr-3"></i>
-                            <div><strong class="text-gray-900">Willow Type:</strong> Kashmir Willow</div>
+                            <div><strong class="text-gray-900">Fit:</strong> Secure lockdown lacing system for optimal ankle support.</div>
                         </li>
                         <li class="flex items-start">
                             <i class="fas fa-check-circle text-cricket-green mt-1 mr-3"></i>
-                            <div><strong class="text-gray-900">Handle:</strong> Cane Handle</div>
+                            <div><strong class="text-gray-900">Size Available:</strong> Size 7 to 11</div>
                         </li>
                         <li class="flex items-start">
                             <i class="fas fa-check-circle text-cricket-green mt-1 mr-3"></i>
-                            <div><strong class="text-gray-900">Length:</strong> 35 Inches</div>
-                        </li>
-                        <li class="flex items-start">
-                            <i class="fas fa-check-circle text-cricket-green mt-1 mr-3"></i>
-                            <div><strong class="text-gray-900">Edge Thickness:</strong> ~35 – 45 mm</div>
-                        </li>
-                        <li class="flex items-start">
-                            <i class="fas fa-check-circle text-cricket-green mt-1 mr-3"></i>
-                            <div><strong class="text-gray-900">Toe Guard:</strong> Often included to protect against moisture and ground impact.</div>
+                            <div><strong class="text-gray-900">Ideal For:</strong> Both batsmen and bowlers needing firm landings.</div>
                         </li>
                     </ul>
 
                     <div class="flex flex-col sm:flex-row gap-4">
-                        <a href="https://wa.me/9118033485?text=Hi, I want to order the Soft Tennis Bat (₹2,500)" target="_blank" class="bg-green-500 text-white px-8 py-4 rounded-xl hover:bg-green-600 transition duration-300 text-center font-bold text-lg flex items-center justify-center gap-3 shadow-lg hover:shadow-xl transform hover:-translate-y-1">
+                        <a href="https://wa.me/9118033485?text=Hi, I want to order the Professional Cricket Shoes (₹1,899)" target="_blank" class="bg-green-500 text-white px-8 py-4 rounded-xl hover:bg-green-600 transition duration-300 text-center font-bold text-lg flex items-center justify-center gap-3 shadow-lg hover:shadow-xl transform hover:-translate-y-1">
                             <i class="fab fa-whatsapp text-2xl"></i> Order on WhatsApp
                         </a>
                     </div>
@@ -279,6 +301,50 @@
         mobileMenuBtn.addEventListener('click', () => {
             mobileMenu.classList.toggle('hidden');
         });
+
+        // Carousel functionality
+        function initCarousels() {
+            document.querySelectorAll('[data-carousel]').forEach(carousel => {
+                const slides = carousel.querySelector('.slides');
+                const imgs = slides.querySelectorAll('img');
+                const dotsContainer = carousel.querySelector('.dots');
+                carousel.dataset.current = '0';
+                dotsContainer.innerHTML = '';
+                imgs.forEach((_, i) => {
+                    const dot = document.createElement('span');
+                    if (i === 0) dot.classList.add('active');
+                    dot.addEventListener('click', () => goToSlide(carousel, i));
+                    dotsContainer.appendChild(dot);
+                });
+            });
+        }
+        function goToSlide(carousel, index) {
+            const slides = carousel.querySelector('.slides');
+            const imgs = slides.querySelectorAll('img');
+            const dots = carousel.querySelectorAll('.dots span');
+            if (index < 0) index = imgs.length - 1;
+            if (index >= imgs.length) index = 0;
+            carousel.dataset.current = index;
+            slides.style.transform = 'translateX(-' + (index * 100) + '%)';
+            dots.forEach((d, i) => d.classList.toggle('active', i === index));
+        }
+        function slideCarousel(btn, dir) {
+            const carousel = btn.closest('[data-carousel]');
+            const current = parseInt(carousel.dataset.current || 0);
+            goToSlide(carousel, current + dir);
+        }
+        // Touch swipe support
+        document.querySelectorAll('[data-carousel]').forEach(carousel => {
+            let startX = 0;
+            carousel.addEventListener('touchstart', e => { startX = e.touches[0].clientX; }, {passive:true});
+            carousel.addEventListener('touchend', e => {
+                const diff = startX - e.changedTouches[0].clientX;
+                if (Math.abs(diff) > 40) {
+                    slideCarousel(carousel.querySelector('.next'), diff > 0 ? 1 : -1);
+                }
+            }, {passive:true});
+        });
+        initCarousels();
     </script>
 </body>
 </html>

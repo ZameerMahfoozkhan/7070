@@ -1,0 +1,368 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Shop the KP Destroyer Ed. Hard Tennis Bat. Durable bat for daily practice sessions">
+    <link rel="shortcut icon" href="./favicon_io/favicon.ico" type="image/x-icon">
+    <title>KP Destroyer Ed. - 7070 Cricket Bat</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        cricket: {
+                            green: '#2D5016',
+                            gold: '#FFD700',
+                            brown: '#8B4513'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="canonical" href="https://7070sportsayodhya.com/kp-destroyer-edition.html" />
+    <style>
+        .bat-carousel { position: relative; width: 100%; overflow: hidden; border-radius: 0.5rem; }
+        .bat-carousel .slides { display: flex; transition: transform 0.4s ease; }
+        .bat-carousel .slides img { width: 100%; flex-shrink: 0; object-fit: contain; aspect-ratio: 1/1; background: #f9fafb; }
+        .bat-carousel .prev, .bat-carousel .next {
+            position: absolute; top: 50%; transform: translateY(-50%); z-index: 10;
+            background: rgba(0,0,0,0.45); color: #fff; border: none; cursor: pointer;
+            width: 40px; height: 40px; border-radius: 50%; font-size: 18px;
+            display: flex; align-items: center; justify-content: center;
+            opacity: 0; transition: opacity 0.3s;
+        }
+        .bat-carousel:hover .prev, .bat-carousel:hover .next { opacity: 1; }
+        .bat-carousel .prev { left: 10px; }
+        .bat-carousel .next { right: 10px; }
+        .bat-carousel .dots { position: absolute; bottom: 12px; left: 50%; transform: translateX(-50%); display: flex; gap: 8px; z-index: 10; }
+        .bat-carousel .dots span { width: 10px; height: 10px; border-radius: 50%; background: rgba(0,0,0,0.3); cursor: pointer; transition: background 0.3s; border: 1px solid #fff; }
+        .bat-carousel .dots span.active { background: #FFD700; border-color: #FFD700; }
+    </style>
+</head>
+<body class="bg-gray-50 flex flex-col min-h-screen">
+    <!-- Header/Navbar -->
+    <header class="bg-white shadow-lg sticky top-0 z-50">
+        <nav class="container mx-auto px-3 md:px-4 py-3 md:py-4">
+            <div class="flex justify-between items-center">
+                <a href="index.html" class="flex items-center space-x-2 md:space-x-3">
+                    <div class="p-1.5 md:p-2 rounded-full">
+                        <img src="./photos/logo-removebg-preview.png" alt="7070SPORTS Logo" class="w-8 h-8 md:w-10 md:h-10 object-contain ">
+                    </div>
+                    <div>
+                        <h1 class="text-lg md:text-2xl font-bold text-cricket-green">7070SPORTS</h1>
+                        <p class="text-[10px] md:text-xs text-gray-600 -mt-1">AYODHYA</p>
+                    </div>
+                </a>
+                
+                <!-- Desktop Menu -->
+                 <div class="hidden lg:flex space-x-6 xl:space-x-8 items-center">
+                    <a href="index.html" class="text-gray-700 hover:text-cricket-green transition duration-300 text-sm xl:text-base">Home</a>
+                    <div class="relative group">
+                        <button class="text-gray-700 hover:text-cricket-green transition duration-300 flex items-center text-sm xl:text-base">
+                            Categories <i class="fas fa-chevron-down ml-1 text-xs"></i>
+                        </button>
+                        <div class="absolute top-full left-0 bg-white shadow-xl rounded-lg py-3 w-56 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 border">
+                            <a href="bats.html" class="flex items-center px-4 py-3 text-gray-700 hover:bg-cricket-green hover:text-white transition duration-300 text-sm">
+                                <i class="fas fa-baseball-bat mr-3"></i>Cricket Bats
+                            </a>
+                            <a href="balls.html" class="flex items-center px-4 py-3 text-gray-700 hover:bg-cricket-green hover:text-white transition duration-300 text-sm">
+                                <i class="fas fa-baseball-ball mr-3"></i>Cricket Balls
+                            </a>
+                            <a href="jerseys.html" class="flex items-center px-4 py-3 text-gray-700 hover:bg-cricket-green hover:text-white transition duration-300 text-sm">
+                                <i class="fas fa-tshirt mr-3"></i>Jerseys
+                            </a>
+                            <a href="trackpants.html" class="flex items-center px-4 py-3 text-gray-700 hover:bg-cricket-green hover:text-white transition duration-300 text-sm">
+                                <i class="fas fa-running mr-3"></i>Track Pants
+                            </a>
+                            <a href="caps.html" class="flex items-center px-4 py-3 text-gray-700 hover:bg-cricket-green hover:text-white transition duration-300 text-sm">
+                                <i class="fas fa-hat-cowboy mr-3"></i>Caps
+                            </a>
+                            <a href="shoes.html" class="flex items-center px-4 py-3 text-gray-700 hover:bg-cricket-green hover:text-white transition duration-300 text-sm">
+                                <i class="fas fa-shoe-prints mr-3"></i>Cricket Shoes
+                            </a>
+                        </div>
+                    </div>
+                    <a href="about.html" class="text-gray-700 hover:text-cricket-green transition duration-300 text-sm xl:text-base">About</a>
+                    <a href="contact.html" class="text-gray-700 hover:text-cricket-green transition duration-300 text-sm xl:text-base">Contact</a>
+                    <a href="https://wa.me/+919118033485" target="_blank" class="bg-green-500 hover:bg-green-600 text-white px-4 xl:px-6 py-2 xl:py-2.5 rounded-lg font-semibold transition duration-300 flex items-center gap-2 text-sm xl:text-base shadow-lg">
+                        <i class="fab fa-whatsapp text-lg xl:text-xl"></i>
+                        Chat on WhatsApp
+                    </a>
+                </div>
+                
+                <!-- Mobile Menu Button -->
+                <button id="mobile-menu-btn" class="lg:hidden text-cricket-green">
+                    <i class="fas fa-bars text-xl md:text-xl"></i>
+                </button>
+            </div>
+            
+            <!-- Mobile Menu -->
+            <div id="mobile-menu" class="hidden md:hidden mt-4 pb-4">
+                <a href="index.html" class="block py-2 text-gray-700 hover:text-cricket-green text-sm">Home</a>
+                <a href="bats.html" class="block py-2 text-cricket-green font-semibold text-sm">Cricket Bats</a>
+                <a href="balls.html" class="block py-2 text-gray-700 hover:text-cricket-green text-sm">Cricket Balls</a>
+                <a href="jerseys.html" class="block py-2 text-gray-700 hover:text-cricket-green text-sm">Jerseys</a>
+                <a href="trackpants.html" class="block py-2 text-gray-700 hover:text-cricket-green text-sm">Track Pants</a>
+                <a href="caps.html" class="block py-2 text-gray-700 hover:text-cricket-green text-sm">Caps</a>
+                <a href="shoes.html" class="block py-2.5 text-gray-700 hover:text-cricket-green text-sm">Cricket Shoes</a>
+                <a href="about.html" class="block py-2 text-gray-700 hover:text-cricket-green text-sm">About</a>
+                <a href="contact.html" class="block py-2 text-gray-700 hover:text-cricket-green text-sm">Contact</a>
+                <a href="https://wa.me/+919118033485" target="_blank" class="block mt-3 bg-green-500 hover:bg-green-600 text-white px-4 py-2.5 rounded-lg font-semibold transition duration-300 text-center text-sm">
+                    <i class="fab fa-whatsapp mr-2"></i>Chat on WhatsApp
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Breadcrumb -->
+    <div class="bg-gray-100 py-3 border-b">
+        <div class="container mx-auto px-4">
+            <nav class="text-sm text-gray-500">
+                <a href="index.html" class="hover:text-cricket-green">Home</a>
+                <span class="mx-2">/</span>
+                <a href="bats.html" class="hover:text-cricket-green">Cricket Bats</a>
+                <span class="mx-2">/</span>
+                <span class="text-gray-800 font-semibold">KP Destroyer Ed.</span>
+            </nav>
+        </div>
+    </div>
+
+    <!-- Product Details -->
+    <main class="flex-grow py-8 md:py-12">
+        <div class="container mx-auto px-4">
+            <div class="bg-white rounded-2xl shadow-xl overflow-hidden flex flex-col lg:flex-row">
+                <!-- Product Images -->
+                <div class="lg:w-1/2 p-4 md:p-8 bg-gray-50 flex items-center justify-center">
+                    <div class="bat-carousel w-full max-w-lg shadow-md" data-carousel>
+                        <div class="slides">
+                            <img src="./photos/bat/Kp destroyer.jpg" alt="KP Destroyer View 1">
+                            <img src="./photos/bat/Kp destroyer1.jpg" alt="KP Destroyer View 2">
+                            <img src="./photos/bat/Kp destroyer2.jpg" alt="KP Destroyer View 3">
+                            <img src="./photos/bat/Kp destroyer3.jpg" alt="KP Destroyer View 4">
+                            <img src="./photos/bat/Kp destroyer4.jpg" alt="KP Destroyer View 5">
+                            <img src="./photos/bat/Kp destroyer5.jpg" alt="KP Destroyer View 6">
+                            <img src="./photos/bat/bat cover.jpg" alt="Bat Cover">
+                        </div>
+                        <button class="prev" onclick="slideCarousel(this,-1)">&#10094;</button>
+                        <button class="next" onclick="slideCarousel(this,1)">&#10095;</button>
+                        <div class="dots"></div>
+                        <div class="absolute top-4 right-4 bg-red-600 text-white px-3 py-1.5 rounded-md text-sm font-semibold z-20 shadow-lg animate-pulse">Best Seller | â‚¹500 OFF</div>
+                        
+                    </div>
+                </div>
+                
+                <!-- Product Information -->
+                <div class="lg:w-1/2 p-6 md:p-10 lg:p-12 flex flex-col justify-center">
+                    <h1 class="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-800 mb-3">KP Destroyer Ed.</h1>
+                    
+                    <div class="flex items-center gap-4 mb-6">
+                        <div class="flex items-center">
+                            <div class="text-cricket-gold mr-2 text-lg">
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
+                            </div>
+                            <span class="text-sm text-gray-600">(15 Reviews)</span>
+                        </div>
+                        <span class="bg-green-100 text-green-800 text-xs font-semibold px-2.5 py-0.5 rounded border border-green-200">In Stock</span>
+                    </div>
+                    
+                    <div class="text-4xl font-bold text-cricket-green mb-8"><span class="text-2xl text-gray-400 line-through mr-3">â‚¹5,000</span>â‚¹4,500</div>
+                    
+                    <p class="text-gray-600 mb-8 text-base leading-relaxed">
+                        Durable bat for daily practice sessions
+                    </p>
+                    
+                    <h3 class="text-xl font-bold text-gray-800 mb-4 border-b pb-2">Specifications</h3>
+                    <ul class="space-y-3 mb-10 text-gray-700">
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-cricket-green mt-1 mr-3"></i>
+                            <div><strong class="text-gray-900">Bat Type:</strong> Hard Tennis Bat</div>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-cricket-green mt-1 mr-3"></i>
+                            <div><strong class="text-gray-900">Weight:</strong> 970 to 1100 Gram</div>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-cricket-green mt-1 mr-3"></i>
+                            <div><strong class="text-gray-900">Willow Type:</strong> Kashmir Willow â€” durable, affordable, and ideal for hard tennis balls.</div>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-cricket-green mt-1 mr-3"></i>
+                            <div><strong class="text-gray-900">Handle:</strong> Singapore Cane handle</div>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-cricket-green mt-1 mr-3"></i>
+                            <div><strong class="text-gray-900">Length:</strong> 35 & 36 Inches</div>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-cricket-green mt-1 mr-3"></i>
+                            <div><strong class="text-gray-900">Width:</strong> ~4.4â€³ â€“ 4.5â€³</div>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-cricket-green mt-1 mr-3"></i>
+                            <div><strong class="text-gray-900">Edge Thickness:</strong> 45â€“55mm</div>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-cricket-green mt-1 mr-3"></i>
+                            <div><strong class="text-gray-900">Toe Guard:</strong> Often included to protect against moisture and ground impact.</div>
+                        </li>
+                                            <li class="flex items-start">
+                            <i class="fas fa-check-circle text-cricket-green mt-1 mr-3"></i>
+                            <div><strong class="text-gray-900">Cover:</strong> SINGLE & DOUBLE WATERPROOF BAT COVER Available</div>
+                        </li>
+                    </ul>
+
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <a href="https://wa.me/+919118033485?text=Hi, I want to order the KP Destroyer Ed. (â‚¹5,000)" target="_blank" class="bg-green-500 text-white px-8 py-4 rounded-xl hover:bg-green-600 transition duration-300 text-center font-bold text-lg flex items-center justify-center gap-3 shadow-lg hover:shadow-xl transform hover:-translate-y-1">
+                            <i class="fab fa-whatsapp text-2xl"></i> Order on WhatsApp
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-cricket-green text-white py-4 md:py-8 lg:py-10 mt-auto">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 md:gap-8 lg:gap-12">
+                <div class="col-span-2 md:col-span-1">
+                    <a href="index.html" class="flex items-center space-x-2 mb-3 md:mb-6">
+                        <div class="bg-white w-8 h-8 md:w-10 md:h-10 rounded-full flex items-center justify-center p-1 shadow-lg">
+                        <img src="./photos/logo-removebg-preview.png" alt="7070SPORTS Logo" class="w-8 h-8 md:w-10 md:h-10 object-cover "></div>
+                        <div>
+                            <h3 class="text-base md:text-2xl font-bold">7070SPORTS</h3>
+                            <p class="text-[9px] md:text-sm text-gray-300 -mt-1">AYODHYA</p>
+                        </div>
+                    </a>
+                    <p class="text-gray-300 mb-3 md:mb-6 leading-relaxed text-[10px] md:text-base hidden md:block">Your trusted partner for premium cricket equipment in Ayodhya.</p>
+                    <div class="flex space-x-2 md:space-x-4">
+                        <a href="https://www.facebook.com/share/19XDb8hzyE/" class="bg-cricket-gold text-cricket-green p-1.5 md:p-3 rounded-full hover:bg-yellow-400 transition duration-300">
+                            <i class="fab fa-facebook text-xs md:text-base"></i>
+                        </a>
+                        <a href="https://www.instagram.com/7070sports_ayodhya_?igsh=ODh6dzlvNGZtYWQy" class="bg-cricket-gold text-cricket-green p-1.5 md:p-3 rounded-full hover:bg-yellow-400 transition duration-300">
+                            <i class="fab fa-instagram text-xs md:text-base"></i>
+                        </a>
+                        <a href="https://chat.whatsapp.com/LGrpHnsJnYfDV3YGjspprH?mode=ems_copy_t" class="bg-cricket-gold text-cricket-green p-1.5 md:p-3 rounded-full hover:bg-yellow-400 transition duration-300">
+                            <i class="fab fa-whatsapp text-xs md:text-base"></i>
+                        </a>
+                        <a href="https://www.youtube.com/live/r8u07clvWk8?si=Ar0Xukxn5SeWtXoX" class="bg-cricket-gold text-cricket-green p-1.5 md:p-3 rounded-full hover:bg-yellow-400 transition duration-300">
+                            <i class="fab fa-youtube text-xs md:text-base"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h4 class="text-sm md:text-xl font-bold mb-2 md:mb-6">Quick Links</h4>
+                    <ul class="space-y-1 md:space-y-3">
+                        <li><a href="index.html" class="text-gray-300 hover:text-cricket-gold transition duration-300 flex items-center text-[10px] md:text-base"><i class="fas fa-chevron-right mr-1 md:mr-2 text-[8px] md:text-xs"></i>Home</a></li>
+                        <li><a href="about.html" class="text-gray-300 hover:text-cricket-gold transition duration-300 flex items-center text-[10px] md:text-base"><i class="fas fa-chevron-right mr-1 md:mr-2 text-[8px] md:text-xs"></i>About Us</a></li>
+                        <li><a href="contact.html" class="text-gray-300 hover:text-cricket-gold transition duration-300 flex items-center text-[10px] md:text-base"><i class="fas fa-chevron-right mr-1 md:mr-2 text-[8px] md:text-xs"></i>Contact</a></li>
+                        <li><a href="faq.html" class="text-gray-300 hover:text-cricket-gold transition duration-300 flex items-center text-[10px] md:text-base"><i class="fas fa-chevron-right mr-1 md:mr-2 text-[8px] md:text-xs"></i>FAQs</a></li>
+                        <li><a href="bulk-orders.html" class="text-gray-300 hover:text-cricket-gold transition duration-300 flex items-center text-[10px] md:text-base"><i class="fas fa-chevron-right mr-1 md:mr-2 text-[8px] md:text-xs"></i>Bulk Orders</a></li>
+                        <li><a href="custom-jersey.html" class="text-gray-300 hover:text-cricket-gold transition duration-300 flex items-center text-[10px] md:text-base"><i class="fas fa-chevron-right mr-1 md:mr-2 text-[8px] md:text-xs"></i>Custom Jersey</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-sm md:text-xl font-bold mb-2 md:mb-6">Categories</h4>
+                    <ul class="space-y-1 md:space-y-3">
+                        <li><a href="bats.html" class="text-gray-300 hover:text-cricket-gold transition duration-300 flex items-center text-[10px] md:text-base"><i class="fas fa-chevron-right mr-1 md:mr-2 text-[8px] md:text-xs"></i>Bats</a></li>
+                        <li><a href="balls.html" class="text-gray-300 hover:text-cricket-gold transition duration-300 flex items-center text-[10px] md:text-base"><i class="fas fa-chevron-right mr-1 md:mr-2 text-[8px] md:text-xs"></i>Balls</a></li>
+                        <li><a href="jerseys.html" class="text-gray-300 hover:text-cricket-gold transition duration-300 flex items-center text-[10px] md:text-base"><i class="fas fa-chevron-right mr-1 md:mr-2 text-[8px] md:text-xs"></i>Jerseys</a></li>
+                        <li><a href="trackpants.html" class="text-gray-300 hover:text-cricket-gold transition duration-300 flex items-center text-[10px] md:text-base"><i class="fas fa-chevron-right mr-1 md:mr-2 text-[8px] md:text-xs"></i>Track Pants</a></li>
+                        <li><a href="caps.html" class="text-gray-300 hover:text-cricket-gold transition duration-300 flex items-center text-[10px] md:text-base"><i class="fas fa-chevron-right mr-1 md:mr-2 text-[8px] md:text-xs"></i>Caps</a></li>
+                        <li><a href="shoes.html" class="text-gray-300 hover:text-cricket-gold transition duration-300 flex items-center text-[10px] md:text-base"><i class="fas fa-chevron-right mr-1 md:mr-2 text-[8px] md:text-xs"></i>Shoes</a></li>
+                    </ul>
+                </div>
+                
+                
+                <div>
+                    <h4 class="text-sm md:text-xl font-bold mb-2 md:mb-6">Legal & Policies</h4>
+                    <ul class="space-y-1 md:space-y-3">
+                        <li><a href="shipping-policy.html" class="text-gray-300 hover:text-cricket-gold transition duration-300 flex items-center text-[10px] md:text-base"><i class="fas fa-chevron-right mr-1 md:mr-2 text-[8px] md:text-xs"></i>Shipping Policy</a></li>
+                        <li><a href="return-policy.html" class="text-gray-300 hover:text-cricket-gold transition duration-300 flex items-center text-[10px] md:text-base"><i class="fas fa-chevron-right mr-1 md:mr-2 text-[8px] md:text-xs"></i>Return Policy</a></li>
+                        <li><a href="privacy-policy.html" class="text-gray-300 hover:text-cricket-gold transition duration-300 flex items-center text-[10px] md:text-base"><i class="fas fa-chevron-right mr-1 md:mr-2 text-[8px] md:text-xs"></i>Privacy Policy</a></li>
+                        <li><a href="terms-conditions.html" class="text-gray-300 hover:text-cricket-gold transition duration-300 flex items-center text-[10px] md:text-base"><i class="fas fa-chevron-right mr-1 md:mr-2 text-[8px] md:text-xs"></i>Terms & Conditions</a></li>
+                        </ul>
+                </div>
+                <div>
+                    <h4 class="text-sm md:text-xl font-bold mb-2 md:mb-6">Contact</h4>
+                    <div class="space-y-1.5 md:space-y-4 text-gray-300">
+                        <div class="flex items-start">
+                            <i class="fas fa-map-marker-alt mr-1.5 md:mr-3 mt-0.5 md:mt-1 text-cricket-gold text-[10px] md:text-base"></i>
+                            <p class="text-[10px] md:text-base">Ram Path , Ayodhya</p>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-phone mr-1.5 md:mr-3 text-cricket-gold text-[10px] md:text-base"></i>
+                            <p class="text-[10px] md:text-base">+919118033485</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="border-t border-green-600 mt-4 md:mt-12 pt-3 md:pt-8 text-center">
+                <p class="text-gray-300 text-[9px] md:text-base">&copy; 2026 7070SPORTS AYODHYA. All rights reserved.</p>
+                <p class="text-gray-300 text-[9px] md:text-base">Designed by Mohd Taqi Mehdi & Developed/Managed by <a href="https://www.instagram.com/web_by_zam?igsh=aXMzb3dsbHIxbHU2" target="_blank" class="hover:text-cricket-gold transition duration-300 underline">Sameer Mahfooz Khan</a>.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile Menu Toggle
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Carousel functionality
+        function initCarousels() {
+            document.querySelectorAll('[data-carousel]').forEach(carousel => {
+                const slides = carousel.querySelector('.slides');
+                const imgs = slides.querySelectorAll('img');
+                const dotsContainer = carousel.querySelector('.dots');
+                carousel.dataset.current = '0';
+                dotsContainer.innerHTML = '';
+                imgs.forEach((_, i) => {
+                    const dot = document.createElement('span');
+                    if (i === 0) dot.classList.add('active');
+                    dot.addEventListener('click', () => goToSlide(carousel, i));
+                    dotsContainer.appendChild(dot);
+                });
+            });
+        }
+        function goToSlide(carousel, index) {
+            const slides = carousel.querySelector('.slides');
+            const imgs = slides.querySelectorAll('img');
+            const dots = carousel.querySelectorAll('.dots span');
+            if (index < 0) index = imgs.length - 1;
+            if (index >= imgs.length) index = 0;
+            carousel.dataset.current = index;
+            slides.style.transform = 'translateX(-' + (index * 100) + '%)';
+            dots.forEach((d, i) => d.classList.toggle('active', i === index));
+        }
+        function slideCarousel(btn, dir) {
+            const carousel = btn.closest('[data-carousel]');
+            const current = parseInt(carousel.dataset.current || 0);
+            goToSlide(carousel, current + dir);
+        }
+        // Touch swipe support
+        document.querySelectorAll('[data-carousel]').forEach(carousel => {
+            let startX = 0;
+            carousel.addEventListener('touchstart', e => { startX = e.touches[0].clientX; }, {passive:true});
+            carousel.addEventListener('touchend', e => {
+                const diff = startX - e.changedTouches[0].clientX;
+                if (Math.abs(diff) > 40) {
+                    slideCarousel(carousel.querySelector('.next'), diff > 0 ? 1 : -1);
+                }
+            }, {passive:true});
+        });
+        initCarousels();
+    </script>
+</body>
+</html>

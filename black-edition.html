@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -24,6 +24,24 @@
     </script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="canonical" href="https://7070sportsayodhya.com/black-edition.html" />
+    <style>
+        .bat-carousel { position: relative; width: 100%; overflow: hidden; }
+        .bat-carousel .slides { display: flex; transition: transform 0.4s ease; }
+        .bat-carousel .slides img { width: 100%; flex-shrink: 0; object-fit: contain; aspect-ratio: 1/1; }
+        .bat-carousel .prev, .bat-carousel .next {
+            position: absolute; top: 50%; transform: translateY(-50%); z-index: 10;
+            background: rgba(0,0,0,0.45); color: #fff; border: none; cursor: pointer;
+            width: 28px; height: 28px; border-radius: 50%; font-size: 14px;
+            display: flex; align-items: center; justify-content: center;
+            opacity: 0; transition: opacity 0.3s;
+        }
+        .bat-carousel:hover .prev, .bat-carousel:hover .next { opacity: 1; }
+        .bat-carousel .prev { left: 6px; }
+        .bat-carousel .next { right: 6px; }
+        .bat-carousel .dots { position: absolute; bottom: 8px; left: 50%; transform: translateX(-50%); display: flex; gap: 5px; z-index: 10; }
+        .bat-carousel .dots span { width: 8px; height: 8px; border-radius: 50%; background: rgba(255,255,255,0.5); cursor: pointer; transition: background 0.3s; }
+        .bat-carousel .dots span.active { background: #FFD700; }
+    </style>
 </head>
 <body class="bg-gray-50 flex flex-col min-h-screen">
     <!-- Header/Navbar -->
@@ -119,8 +137,17 @@
             <div class="bg-white rounded-2xl shadow-xl overflow-hidden flex flex-col lg:flex-row">
                 <!-- Product Images -->
                 <div class="lg:w-1/2 p-4 md:p-8 bg-gray-50 flex items-center justify-center relative">
-                    <div class="w-full max-w-lg shadow-md rounded-lg overflow-hidden bg-white">
-                        <img src="./photos/bat/black.jpg" alt="Black Edition View" class="w-full h-full object-contain aspect-square">
+                    <div class="bat-carousel w-full max-w-lg shadow-md" data-carousel>
+                        <div class="slides">
+                            <img src="./photos/bat/Black Edition1.jpg" alt="Black Edition View 1">
+                            <img src="./photos/bat/Black Edition2.jpg" alt="Black Edition View 2">
+                            <img src="./photos/bat/Black Edition3.jpg" alt="Black Edition View 3">
+                            <img src="./photos/bat/Black Edition4.jpg" alt="Black Edition View 4">
+                            <img src="./photos/bat/bat cover.jpg" alt="Bat Cover">
+                        </div>
+                        <button class="prev" onclick="slideCarousel(this,-1)">&#10094;</button>
+                        <button class="next" onclick="slideCarousel(this,1)">&#10095;</button>
+                        <div class="dots"></div>
                     </div>
                 </div>
                 
@@ -138,7 +165,7 @@
                         <span class="bg-green-100 text-green-800 text-xs font-semibold px-2.5 py-0.5 rounded border border-green-200">In Stock</span>
                     </div>
                     
-                    <div class="text-4xl font-bold text-cricket-green mb-8"><span class="text-2xl text-gray-400 line-through mr-3">₹5,500</span>₹5,000</div>
+                    <div class="text-4xl font-bold text-cricket-green mb-8"><span class="text-2xl text-gray-400 line-through mr-3">₹6,000</span>₹5,500</div>
                     
                     <p class="text-gray-600 mb-8 text-base leading-relaxed">
                         Experience the ultimate power and precision with the Black Edition Hard Tennis Bat. Designed specifically for hard tennis balls, this premium bat offers unmatched durability and balance.
@@ -288,6 +315,52 @@
         mobileMenuBtn.addEventListener('click', () => {
             mobileMenu.classList.toggle('hidden');
         });
+    </script>
+
+    <script>
+        // Carousel functionality
+        function initCarousels() {
+            document.querySelectorAll('[data-carousel]').forEach(carousel => {
+                const slides = carousel.querySelector('.slides');
+                const imgs = slides.querySelectorAll('img');
+                const dotsContainer = carousel.querySelector('.dots');
+                carousel.dataset.current = '0';
+                dotsContainer.innerHTML = '';
+                imgs.forEach((_, i) => {
+                    const dot = document.createElement('span');
+                    if (i === 0) dot.classList.add('active');
+                    dot.addEventListener('click', () => goToSlide(carousel, i));
+                    dotsContainer.appendChild(dot);
+                });
+            });
+        }
+        function goToSlide(carousel, index) {
+            const slides = carousel.querySelector('.slides');
+            const imgs = slides.querySelectorAll('img');
+            const dots = carousel.querySelectorAll('.dots span');
+            if (index < 0) index = imgs.length - 1;
+            if (index >= imgs.length) index = 0;
+            carousel.dataset.current = index;
+            slides.style.transform = 'translateX(-' + (index * 100) + '%)';
+            dots.forEach((d, i) => d.classList.toggle('active', i === index));
+        }
+        function slideCarousel(btn, dir) {
+            const carousel = btn.closest('[data-carousel]');
+            const current = parseInt(carousel.dataset.current || 0);
+            goToSlide(carousel, current + dir);
+        }
+        // Touch swipe support
+        document.querySelectorAll('[data-carousel]').forEach(carousel => {
+            let startX = 0;
+            carousel.addEventListener('touchstart', e => { startX = e.touches[0].clientX; }, {passive:true});
+            carousel.addEventListener('touchend', e => {
+                const diff = startX - e.changedTouches[0].clientX;
+                if (Math.abs(diff) > 40) {
+                    slideCarousel(carousel.querySelector('.next'), diff > 0 ? 1 : -1);
+                }
+            }, {passive:true});
+        });
+        initCarousels();
     </script>
 </body>
 </html>

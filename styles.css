@@ -1,0 +1,68 @@
+.shoe-carousel { position: relative; width: 100%; overflow: hidden; }
+        .shoe-carousel .slides { display: flex; transition: transform 0.4s ease; }
+        .shoe-carousel .slides img { width: 100%; flex-shrink: 0; object-fit: contain; aspect-ratio: 1/1; }
+        .shoe-carousel .prev, .shoe-carousel .next {
+            position: absolute; top: 50%; transform: translateY(-50%); z-index: 10;
+            background: rgba(0,0,0,0.45); color: #fff; border: none; cursor: pointer;
+            width: 28px; height: 28px; border-radius: 50%; font-size: 14px;
+            display: flex; align-items: center; justify-content: center;
+            opacity: 0; transition: opacity 0.3s;
+        }
+        .shoe-carousel:hover .prev, .shoe-carousel:hover .next { opacity: 1; }
+        .shoe-carousel .prev { left: 6px; }
+        .shoe-carousel .next { right: 6px; }
+        .shoe-carousel .dots { position: absolute; bottom: 8px; left: 50%; transform: translateX(-50%); display: flex; gap: 5px; z-index: 10; }
+        .shoe-carousel .dots span { width: 8px; height: 8px; border-radius: 50%; background: rgba(255,255,255,0.5); cursor: pointer; transition: background 0.3s; }
+        .shoe-carousel .dots span.active { background: #FFD700; }
+
+.bat-carousel { position: relative; width: 100%; overflow: hidden; border-radius: 0.5rem; }
+        .bat-carousel .slides { display: flex; transition: transform 0.4s ease; }
+        .bat-carousel .slides img { width: 100%; flex-shrink: 0; object-fit: contain; aspect-ratio: 1/1; background: #f9fafb; }
+        .bat-carousel .prev, .bat-carousel .next {
+            position: absolute; top: 50%; transform: translateY(-50%); z-index: 10;
+            background: rgba(0,0,0,0.45); color: #fff; border: none; cursor: pointer;
+            width: 40px; height: 40px; border-radius: 50%; font-size: 18px;
+            display: flex; align-items: center; justify-content: center;
+            opacity: 0; transition: opacity 0.3s;
+        }
+        .bat-carousel:hover .prev, .bat-carousel:hover .next { opacity: 1; }
+        .bat-carousel .prev { left: 10px; }
+        .bat-carousel .next { right: 10px; }
+        .bat-carousel .dots { position: absolute; bottom: 12px; left: 50%; transform: translateX(-50%); display: flex; gap: 8px; z-index: 10; }
+        .bat-carousel .dots span { width: 10px; height: 10px; border-radius: 50%; background: rgba(0,0,0,0.3); cursor: pointer; transition: background 0.3s; border: 1px solid #fff; }
+        .bat-carousel .dots span.active { background: #FFD700; border-color: #FFD700; }
+
+.bat-carousel { position: relative; width: 100%; overflow: hidden; }
+        .bat-carousel .slides { display: flex; transition: transform 0.4s ease; }
+        .bat-carousel .slides img { width: 100%; flex-shrink: 0; object-fit: contain; aspect-ratio: 1/1; }
+        .bat-carousel .prev, .bat-carousel .next {
+            position: absolute; top: 50%; transform: translateY(-50%); z-index: 10;
+            background: rgba(0,0,0,0.45); color: #fff; border: none; cursor: pointer;
+            width: 28px; height: 28px; border-radius: 50%; font-size: 14px;
+            display: flex; align-items: center; justify-content: center;
+            opacity: 0; transition: opacity 0.3s;
+        }
+        .bat-carousel:hover .prev, .bat-carousel:hover .next { opacity: 1; }
+        .bat-carousel .prev { left: 6px; }
+        .bat-carousel .next { right: 6px; }
+        .bat-carousel .dots { position: absolute; bottom: 8px; left: 50%; transform: translateX(-50%); display: flex; gap: 5px; z-index: 10; }
+        .bat-carousel .dots span { width: 8px; height: 8px; border-radius: 50%; background: rgba(255,255,255,0.5); cursor: pointer; transition: background 0.3s; }
+        .bat-carousel .dots span.active { background: #FFD700; }
+
+.bat-carousel { position: relative; width: 100%; overflow: hidden; border-radius: 1rem 1rem 0 0; }
+        .bat-carousel .slides { display: flex; transition: transform 0.4s ease; }
+        .bat-carousel .slides img { width: 100%; flex-shrink: 0; object-fit: contain; aspect-ratio: 1/1; }
+        .bat-carousel .prev, .bat-carousel .next {
+            position: absolute; top: 50%; transform: translateY(-50%); z-index: 10;
+            background: rgba(0,0,0,0.45); color: #fff; border: none; cursor: pointer;
+            width: 28px; height: 28px; border-radius: 50%; font-size: 14px;
+            display: flex; align-items: center; justify-content: center;
+            opacity: 0; transition: opacity 0.3s;
+        }
+        .bat-carousel:hover .prev, .bat-carousel:hover .next { opacity: 1; }
+        .bat-carousel .prev { left: 6px; }
+        .bat-carousel .next { right: 6px; }
+        .bat-carousel .dots { position: absolute; bottom: 8px; left: 50%; transform: translateX(-50%); display: flex; gap: 5px; z-index: 10; }
+        .bat-carousel .dots span { width: 8px; height: 8px; border-radius: 50%; background: rgba(255,255,255,0.5); cursor: pointer; transition: background 0.3s; }
+        .bat-carousel .dots span.active { background: #FFD700; }
+

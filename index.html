@@ -6,13 +6,7 @@
     <meta name=description content="Discover 7070 Sports – your one-stop shop for premium sportswear, cricket gear, and accessories. Quality, style, and performance you can trust!">
     <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-M8JDYB1PP3"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
 
-  gtag('config', 'G-M8JDYB1PP3');
-</script>
 <link rel="canonical" href="https://7070sportsayodhya.com/" />
     <!-- Open Graph Meta Tags -->
 <meta property="og:title" content="7070 Sports | Best Sports Accessories in India">
@@ -24,25 +18,7 @@
     <title>7070 Sports | Best Company in India - 7070SportsAyodhya</title>
     <link rel="shortcut icon" href="./favicon_io/favicon.ico" type="image/x-icon">
     <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        cricket: {
-                            green: '#2D5016',
-                            gold: '#FFD700',
-                            brown: '#8B4513'
-                        }
-                    },
-                    fontFamily: {
-                        sans: ['Inter', 'system-ui', 'sans-serif'],
-                        display: ['Poppins', 'sans-serif']
-                    }
-                }
-            }
-        }
-    </script>
+    
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -96,6 +72,9 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
+    <script src="js/tailwind-config.js"></script>
 </head>
 <body class="bg-gray-50 font-sans">
     <!-- Header/Navbar -->
@@ -172,17 +151,7 @@
                     <i class="fab fa-whatsapp mr-2"></i>Chat on WhatsApp
                 </a>
             </div>
-            <script>
-                // Existing mobile menu toggle code...
-
-                // Hide mobile menu after clicking a link
-                document.querySelectorAll('.mobile-menu-link').forEach(link => {
-                    link.addEventListener('click', function () {
-                        const mobileMenu = document.getElementById('mobile-menu');
-                        mobileMenu.classList.add('hidden');
-                    });
-                });
-            </script>
+            
         </nav>
     </header>
 
@@ -1629,7 +1598,8 @@ With a growing base of loyal customers and athletes, <strong>7070 Sports Ayodhya
                         <li><a href="faq.html" class="text-gray-300 hover:text-cricket-gold transition duration-300 flex items-center text-[10px] md:text-base"><i class="fas fa-chevron-right mr-1 md:mr-2 text-[8px] md:text-xs"></i>FAQs</a></li>
                         <li><a href="bulk-orders.html" class="text-gray-300 hover:text-cricket-gold transition duration-300 flex items-center text-[10px] md:text-base"><i class="fas fa-chevron-right mr-1 md:mr-2 text-[8px] md:text-xs"></i>Bulk Orders</a></li>
                         <li><a href="custom-jersey.html" class="text-gray-300 hover:text-cricket-gold transition duration-300 flex items-center text-[10px] md:text-base"><i class="fas fa-chevron-right mr-1 md:mr-2 text-[8px] md:text-xs"></i>Custom Jersey</a></li>
-                    </ul>
+                                            <li><a href="sitemap.html" class="text-gray-300 hover:text-cricket-gold transition duration-300 flex items-center text-[10px] md:text-base"><i class="fas fa-chevron-right mr-1 md:mr-2 text-[8px] md:text-xs"></i>Sitemap</a></li>
+</ul>
                 </div>
                 
                 <div>
@@ -1677,430 +1647,8 @@ With a growing base of loyal customers and athletes, <strong>7070 Sports Ayodhya
         </div>
     </footer>
 
-    <script>
-        // Mobile Menu Toggle
-        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
-        const mobileMenu = document.getElementById('mobile-menu');
-        
-        mobileMenuBtn.addEventListener('click', () => {
-            mobileMenu.classList.toggle('hidden');
-        });
+    
 
-        // Hero Slider - Auto-scroll only
-        let currentHeroSlide = 0;
-        const heroSlides = document.querySelectorAll('.hero-slide');
-        const heroDots = document.querySelectorAll('.hero-dot');
-        
-        function showHeroSlide(index) {
-            heroSlides.forEach((slide, i) => {
-                if (i === index) {
-                    slide.classList.add('active');
-                    slide.style.opacity = '1';
-                    slide.style.zIndex = '1';
-                } else {
-                    slide.classList.remove('active');
-                    slide.style.opacity = '0';
-                    slide.style.zIndex = '0';
-                }
-            });
-            
-            heroDots.forEach((dot, i) => {
-                if (i === index) {
-                    dot.classList.add('active');
-                    dot.style.backgroundColor = '#FFD700';
-                } else {
-                    dot.classList.remove('active');
-                    dot.style.backgroundColor = 'white';
-                }
-            });
-        }
-        
-        function nextHeroSlide() {
-            currentHeroSlide = (currentHeroSlide + 1) % heroSlides.length;
-            showHeroSlide(currentHeroSlide);
-        }
-        
-        // CHANGE: Auto-advance slides every 4 seconds
-        setInterval(nextHeroSlide, 4000);
-        
-        // Dot navigation
-        heroDots.forEach((dot, index) => {
-            dot.addEventListener('click', () => {
-                currentHeroSlide = index;
-                showHeroSlide(currentHeroSlide);
-            });
-        });
-
-        // CHANGE: Brand Ambassador Slider functionality
-        let currentAmbassadorIndex = 0;
-        const ambassadorTrack = document.querySelector('.ambassador-track');
-        const ambassadorDots = document.querySelectorAll('.ambassador-dot');
-        const totalAmbassadors = 8;
-        let slidesPerView = window.innerWidth >= 1024 ? 4 : window.innerWidth >= 768 ? 2 : 1;
-        
-        function updateAmbassadorSlider() {
-            const slideWidth = 100 / slidesPerView;
-            ambassadorTrack.style.transform = `translateX(-${currentAmbassadorIndex * slideWidth}%)`;
-            
-            ambassadorDots.forEach((dot, i) => {
-                if (i === currentAmbassadorIndex) {
-                    dot.classList.add('active');
-                    dot.style.opacity = '1';
-                } else {
-                    dot.classList.remove('active');
-                    dot.style.opacity = '0.5';
-                }
-            });
-        }
-        
-        function nextAmbassadorSlide() {
-            const maxIndex = totalAmbassadors - slidesPerView;
-            currentAmbassadorIndex = (currentAmbassadorIndex + 1) > maxIndex ? 0 : currentAmbassadorIndex + 1;
-            updateAmbassadorSlider();
-        }
-        
-        // Auto-advance ambassador slider every 3 seconds
-        setInterval(nextAmbassadorSlide, 3000);
-        
-        // Dot navigation for ambassadors
-        ambassadorDots.forEach((dot, index) => {
-            dot.addEventListener('click', () => {
-                currentAmbassadorIndex = index;
-                updateAmbassadorSlider();
-            });
-        });
-        
-        // Update slides per view on window resize
-        window.addEventListener('resize', () => {
-            slidesPerView = window.innerWidth >= 1024 ? 4 : window.innerWidth >= 768 ? 2 : 1;
-            updateAmbassadorSlider();
-        });
-
-        // CHANGE: Tournament Slider functionality
-        let currentTournamentIndex = 0;
-        const tournamentTrack = document.querySelector('.tournament-track');
-        const tournamentDots = document.querySelectorAll('.tournament-dot');
-        const totalTournaments = 5;
-        let tournamentSlidesPerView = window.innerWidth >= 1024 ? 3 : window.innerWidth >= 768 ? 2 : 1;
-        
-        function updateTournamentSlider() {
-            const slideWidth = 100 / tournamentSlidesPerView;
-            tournamentTrack.style.transform = `translateX(-${currentTournamentIndex * slideWidth}%)`;
-            
-            tournamentDots.forEach((dot, i) => {
-                if (i === currentTournamentIndex) {
-                    dot.classList.add('active');
-                    dot.style.opacity = '1';
-                } else {
-                    dot.classList.remove('active');
-                    dot.style.opacity = '0.5';
-                }
-            });
-        }
-        
-        function nextTournamentSlide() {
-            const maxIndex = totalTournaments - tournamentSlidesPerView;
-            currentTournamentIndex = (currentTournamentIndex + 1) > maxIndex ? 0 : currentTournamentIndex + 1;
-            updateTournamentSlider();
-        }
-        
-        // Auto-advance tournament slider every 3.5 seconds
-        setInterval(nextTournamentSlide, 3500);
-        
-        // Dot navigation for tournaments
-        tournamentDots.forEach((dot, index) => {
-            dot.addEventListener('click', () => {
-                currentTournamentIndex = index;
-                updateTournamentSlider();
-            });
-        });
-        
-        // Update slides per view on window resize for tournament slider
-        window.addEventListener('resize', () => {
-            tournamentSlidesPerView = window.innerWidth >= 1024 ? 3 : window.innerWidth >= 768 ? 2 : 1;
-            updateTournamentSlider();
-        });
-
-        // Smooth scrolling for anchor links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                const href = this.getAttribute('href');
-                if (href !== '#' && href.length > 1) {
-                    // e.preventDefault();
-                    const target = document.querySelector(href);
-                    if (target) {
-                        target.scrollIntoView({
-                            behavior: 'smooth',
-                            block: 'start'
-                        });
-                    }
-                }
-            });
-        });
-
-        // Counter animation
-        function animateCounters() {
-            const counters = document.querySelectorAll('.counter');
-            counters.forEach(counter => {
-                const target = parseInt(counter.getAttribute('data-target'));
-                const increment = target / 100;
-                let current = 0;
-                
-                const updateCounter = () => {
-                    if (current < target) {
-                        current += increment;
-                        counter.textContent = Math.floor(current);
-                        requestAnimationFrame(updateCounter);
-                    } else {
-                        counter.textContent = target;
-                    }
-                };
-                
-                updateCounter();
-            });
-        }
-
-        // Intersection Observer for counter animation
-        const statsSection = document.querySelector('.counter');
-        if (statsSection) {
-            const observer = new IntersectionObserver((entries) => {
-                entries.forEach(entry => {
-                    if (entry.isIntersecting) {
-                        animateCounters();
-                        observer.unobserve(entry.target);
-                    }
-                });
-            });
-            
-            observer.observe(statsSection.closest('section'));
-        }
-
-        // Form submission
-        const contactForm = document.getElementById('contact-form');
-        if (contactForm) {
-            contactForm.addEventListener('submit', function(e) {
-                e.preventDefault();
-                
-                const name = this.querySelector('[name="name"]').value;
-                const phone = this.querySelector('[name="phone"]').value;
-                const email = this.querySelector('[name="email"]').value;
-                const subject = this.querySelector('[name="subject"]').value;
-                const message = this.querySelector('[name="message"]').value;
-                
-                const whatsappText = "*New Contact Form Inquiry*\n\n*Name:* " + name + "\n*Phone:* " + phone + "\n*Email:* " + email + "\n*Subject:* " + subject + "\n*Message:* " + message;
-                const encodedText = encodeURIComponent(whatsappText);
-                
-                window.open("https://wa.me/917307256084?text=" + encodedText, '_blank');
-                
-                // Show success message
-                const button = this.querySelector('button[type="submit"]');
-                const originalText = button.innerHTML;
-                button.innerHTML = '<i class="fas fa-check mr-2"></i>Redirecting...';
-                button.classList.add('bg-green-600');
-                
-                setTimeout(() => {
-                    button.innerHTML = originalText;
-                    button.classList.remove('bg-green-600');
-                    this.reset();
-                }, 3000);
-            });
-        }
-
-        let currentFeatureIndex = 0;
-        const featureTrack = document.querySelector('.features-track');
-        const featureDots = document.querySelectorAll('.feature-dot');
-        const totalFeatures = 4;
-        let featureSlidesPerView = window.innerWidth >= 1024 ? 4 : window.innerWidth >= 768 ? 2 : 1;
-        
-        function updateFeatureSlider() {
-            const slideWidth = 100 / featureSlidesPerView;
-            featureTrack.style.transform = `translateX(-${currentFeatureIndex * slideWidth}%)`;
-            featureDots.forEach((dot, i) => {
-                dot.style.opacity = i === currentFeatureIndex ? '1' : '0.5';
-            });
-        }
-        
-        function nextFeatureSlide() {
-            const maxIndex = totalFeatures - featureSlidesPerView;
-            currentFeatureIndex = (currentFeatureIndex + 1) > maxIndex ? 0 : currentFeatureIndex + 1;
-            updateFeatureSlider();
-        }
-        
-        setInterval(nextFeatureSlide, 3000);
-        
-        featureDots.forEach((dot, index) => {
-            dot.addEventListener('click', () => {
-                currentFeatureIndex = index;
-                updateFeatureSlider();
-            });
-        });
-        
-        window.addEventListener('resize', () => {
-            featureSlidesPerView = window.innerWidth >= 1024 ? 4 : window.innerWidth >= 768 ? 2 : 1;
-            updateFeatureSlider();
-        });
-
-        let currentStatIndex = 0;
-        const statsTrack = document.querySelector('.stats-track');
-        const statDots = document.querySelectorAll('.stat-dot');
-        const totalStats = 4;
-        let statSlidesPerView = window.innerWidth >= 1024 ? 4 : window.innerWidth >= 768 ? 2 : 1;
-        
-        function updateStatsSlider() {
-            const slideWidth = 100 / statSlidesPerView;
-            statsTrack.style.transform = `translateX(-${currentStatIndex * slideWidth}%)`;
-            statDots.forEach((dot, i) => {
-                dot.style.opacity = i === currentStatIndex ? '1' : '0.5';
-            });
-        }
-        
-        function nextStatSlide() {
-            const maxIndex = totalStats - statSlidesPerView;
-            currentStatIndex = (currentStatIndex + 1) > maxIndex ? 0 : currentStatIndex + 1;
-            updateStatsSlider();
-        }
-        
-        setInterval(nextStatSlide, 3200);
-        
-        statDots.forEach((dot, index) => {
-            dot.addEventListener('click', () => {
-                currentStatIndex = index;
-                updateStatsSlider();
-            });
-        });
-        
-        window.addEventListener('resize', () => {
-            statSlidesPerView = window.innerWidth >= 1024 ? 4 : window.innerWidth >= 768 ? 2 : 1;
-            updateStatsSlider();
-        });
-
-        let currentTestimonialIndex = 0;
-        const testimonialTrack = document.querySelector('.testimonial-track');
-        const testimonialDots = document.querySelectorAll('.testimonial-dot');
-        const totalTestimonials = 6;
-        let testimonialSlidesPerView = window.innerWidth >= 1024 ? 3 : window.innerWidth >= 768 ? 2 : 1;
-        
-        function updateTestimonialSlider() {
-            const slideWidth = 100 / testimonialSlidesPerView;
-            testimonialTrack.style.transform = `translateX(-${currentTestimonialIndex * slideWidth}%)`;
-            testimonialDots.forEach((dot, i) => {
-                dot.style.opacity = i === currentTestimonialIndex ? '1' : '0.5';
-            });
-        }
-        
-        function nextTestimonialSlide() {
-            const maxIndex = totalTestimonials - testimonialSlidesPerView;
-            currentTestimonialIndex = (currentTestimonialIndex + 1) > maxIndex ? 0 : currentTestimonialIndex + 1;
-            updateTestimonialSlider();
-        }
-        
-        setInterval(nextTestimonialSlide, 3400);
-        
-        testimonialDots.forEach((dot, index) => {
-            dot.addEventListener('click', () => {
-                currentTestimonialIndex = index;
-                updateTestimonialSlider();
-            });
-        });
-        
-        window.addEventListener('resize', () => {
-            testimonialSlidesPerView = window.innerWidth >= 1024 ? 3 : window.innerWidth >= 768 ? 2 : 1;
-            updateTestimonialSlider();
-        });
-
-        let currentBrandPartnerIndex = 0;
-        const brandPartnerTrack = document.querySelector('.brand-partner-track');
-        const brandPartnerDots = document.querySelectorAll('.brand-partner-dot');
-        const totalBrandPartners = 6;
-        let brandPartnerSlidesPerView = window.innerWidth >= 1024 ? 6 : window.innerWidth >= 768 ? 3 : 1;
-        
-        function updateBrandPartnerSlider() {
-            const slideWidth = 100 / brandPartnerSlidesPerView;
-            brandPartnerTrack.style.transform = `translateX(-${currentBrandPartnerIndex * slideWidth}%)`;
-            brandPartnerDots.forEach((dot, i) => {
-                dot.style.opacity = i === currentBrandPartnerIndex ? '1' : '0.5';
-            });
-        }
-        
-        function nextBrandPartnerSlide() {
-            const maxIndex = totalBrandPartners - brandPartnerSlidesPerView;
-            currentBrandPartnerIndex = (currentBrandPartnerIndex + 1) > maxIndex ? 0 : currentBrandPartnerIndex + 1;
-            updateBrandPartnerSlider();
-        }
-        
-        setInterval(nextBrandPartnerSlide, 2800);
-        
-        brandPartnerDots.forEach((dot, index) => {
-            dot.addEventListener('click', () => {
-                currentBrandPartnerIndex = index;
-                updateBrandPartnerSlider();
-            });
-        });
-        
-        window.addEventListener('resize', () => {
-            brandPartnerSlidesPerView = window.innerWidth >= 1024 ? 6 : window.innerWidth >= 768 ? 3 : 1;
-            updateBrandPartnerSlider();
-        });
-
-        let currentEventGalleryIndex = 0;
-        const eventGalleryTrack = document.querySelector('.event-gallery-track');
-        const eventGalleryDots = document.querySelectorAll('.event-gallery-dot');
-        const totalEventGallery = 4;
-        let eventGallerySlidesPerView = window.innerWidth >= 1024 ? 4 : window.innerWidth >= 768 ? 2 : 1;
-        
-        function updateEventGallerySlider() {
-            const slideWidth = 100 / eventGallerySlidesPerView;
-            eventGalleryTrack.style.transform = `translateX(-${currentEventGalleryIndex * slideWidth}%)`;
-            eventGalleryDots.forEach((dot, i) => {
-                dot.style.opacity = i === currentEventGalleryIndex ? '1' : '0.5';
-            });
-        }
-        
-        function nextEventGallerySlide() {
-            const maxIndex = totalEventGallery - eventGallerySlidesPerView;
-            currentEventGalleryIndex = (currentEventGalleryIndex + 1) > maxIndex ? 0 : currentEventGalleryIndex + 1;
-            updateEventGallerySlider();
-        }
-        
-        setInterval(nextEventGallerySlide, 3600);
-        
-        eventGalleryDots.forEach((dot, index) => {
-            dot.addEventListener('click', () => {
-                currentEventGalleryIndex = index;
-                updateEventGallerySlider();
-            });
-        });
-        
-        window.addEventListener('resize', () => {
-            eventGallerySlidesPerView = window.innerWidth >= 1024 ? 4 : window.innerWidth >= 768 ? 2 : 1;
-            updateEventGallerySlider();
-        });
-
-        // Reset sliders on window resize
-        window.addEventListener('resize', () => {
-            updateFeatureSlider();
-            updateStatsSlider();
-            updateTestimonialSlider();
-            updateBrandPartnerSlider();
-            updateEventGallerySlider();
-            updateAmbassadorSlider(); // Added this line
-            updateTournamentSlider(); // Added this line
-        });
-
-        // Add transition styles
-        const style = document.createElement('style');
-        style.textContent = `
-            .hero-slide {
-                transition: opacity 1s ease-in-out;
-            }
-            .hero-dot.active {
-                background-color: #FFD700 !important;
-            }
-            .ambassador-dot.active, .tournament-dot.active, .feature-dot.active, .stat-dot.active, .testimonial-dot.active, .brand-partner-dot.active, .event-gallery-dot.active {
-                opacity: 1 !important;
-            }
-        `;
-        document.head.appendChild(style);
-    </script>
+    <script src="js/main.js" defer></script>
 </body>
 </html>

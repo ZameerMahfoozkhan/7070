@@ -6,23 +6,12 @@
     <link rel="shortcut icon" href="./favicon_io/favicon.ico" type="image/x-icon">
     <title>Custom Jersey Printing Page - 7070SPORTS AYODHYA</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        cricket: {
-                            green: '#2D5016',
-                            gold: '#FFD700',
-                            brown: '#8B4513'
-                        }
-                    }
-                }
-            }
-        }
-    </script>
+    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="canonical" href="https://7070sportsayodhya.com/custom-jersey.html" />
+
+    <link rel="stylesheet" href="styles.css">
+    <script src="js/tailwind-config.js"></script>
 </head>
 <body class="bg-white">
     <!-- Header/Navbar -->
@@ -187,7 +176,8 @@
                         <li><a href="faq.html" class="text-gray-300 hover:text-cricket-gold transition duration-300 flex items-center text-[10px] md:text-base"><i class="fas fa-chevron-right mr-1 md:mr-2 text-[8px] md:text-xs"></i>FAQs</a></li>
                         <li><a href="bulk-orders.html" class="text-gray-300 hover:text-cricket-gold transition duration-300 flex items-center text-[10px] md:text-base"><i class="fas fa-chevron-right mr-1 md:mr-2 text-[8px] md:text-xs"></i>Bulk Orders</a></li>
                         <li><a href="custom-jersey.html" class="text-gray-300 hover:text-cricket-gold transition duration-300 flex items-center text-[10px] md:text-base"><i class="fas fa-chevron-right mr-1 md:mr-2 text-[8px] md:text-xs"></i>Custom Jersey</a></li>
-                    </ul>
+                                            <li><a href="sitemap.html" class="text-gray-300 hover:text-cricket-gold transition duration-300 flex items-center text-[10px] md:text-base"><i class="fas fa-chevron-right mr-1 md:mr-2 text-[8px] md:text-xs"></i>Sitemap</a></li>
+</ul>
                 </div>
                 
                 <div>
@@ -235,137 +225,8 @@
         </div>
     </footer>
 
-    <script>
-        // Mobile Menu Toggle
-        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
-        const mobileMenu = document.getElementById('mobile-menu');
-        
-        mobileMenuBtn.addEventListener('click', () => {
-            mobileMenu.classList.toggle('hidden');
-        });
+    
 
-        // Counter animation
-        function animateCounters() {
-            const counters = document.querySelectorAll('.counter');
-            counters.forEach(counter => {
-                const target = parseInt(counter.getAttribute('data-target'));
-                const increment = target / 100;
-                let current = 0;
-                
-                const updateCounter = () => {
-                    if (current < target) {
-                        current += increment;
-                        counter.textContent = Math.floor(current);
-                        requestAnimationFrame(updateCounter);
-                    } else {
-                        counter.textContent = target;
-                    }
-                };
-                
-                updateCounter();
-            });
-        }
-
-        // Intersection Observer for counter animation
-        const statsSection = document.querySelector('section:has(.counter)'); // Select the section containing a counter
-        if (statsSection) {
-            const observer = new IntersectionObserver((entries) => {
-                entries.forEach(entry => {
-                    if (entry.isIntersecting) {
-                        animateCounters();
-                        observer.unobserve(entry.target);
-                    }
-                });
-            }, { threshold: 0.5 }); // Trigger when 50% of the section is visible
-            
-            observer.observe(statsSection);
-        }
-
-        function initHorizontalSlider(sliderId, trackId, dotsId, itemCount) {
-            const slider = document.getElementById(sliderId);
-            const track = document.getElementById(trackId);
-            const dots = document.getElementById(dotsId);
-            
-            if (!slider || !track || !dots) return;
-            
-            let currentIndex = 0;
-            let autoScrollInterval;
-            let slidesPerView = 1; // Default for mobile
-
-            function updateSlider() {
-                if (window.innerWidth >= 1024) {
-                    slidesPerView = itemCount === 4 ? 4 : itemCount === 3 ? 3 : 2;
-                } else if (window.innerWidth >= 768) {
-                    slidesPerView = 2;
-                } else {
-                    slidesPerView = 1;
-                }
-                
-                const slideWidth = 100 / slidesPerView;
-                track.style.transform = `translateX(-${currentIndex * slideWidth}%)`;
-                
-                // Update dots
-                const dotButtons = dots.querySelectorAll('button');
-                dotButtons.forEach((dot, index) => {
-                    if (index === currentIndex) {
-                        dot.classList.remove('bg-gray-300');
-                        dot.classList.add('bg-cricket-green');
-                    } else {
-                        dot.classList.remove('bg-cricket-green');
-                        dot.classList.add('bg-gray-300');
-                    }
-                });
-            }
-            
-            function nextSlide() {
-                const maxIndex = itemCount - slidesPerView;
-                // Calculate the correct next index, ensuring it doesn't exceed the bounds
-                const nextIndex = currentIndex + 1;
-                if (nextIndex <= maxIndex) {
-                    currentIndex = nextIndex;
-                } else {
-                    currentIndex = 0; // Loop back to the beginning
-                }
-                updateSlider();
-            }
-            
-            function startAutoScroll() {
-                stopAutoScroll();
-                autoScrollInterval = setInterval(nextSlide, 3000);
-            }
-            
-            function stopAutoScroll() {
-                if (autoScrollInterval) {
-                    clearInterval(autoScrollInterval);
-                }
-            }
-            
-            // Dot navigation
-            const dotButtons = dots.querySelectorAll('button');
-            dotButtons.forEach((dot, index) => {
-                dot.addEventListener('click', () => {
-                    currentIndex = index;
-                    updateSlider();
-                    startAutoScroll(); // Restart auto-scroll on manual navigation
-                });
-            });
-            
-            // Handle window resize
-            window.addEventListener('resize', () => {
-                updateSlider();
-                startAutoScroll(); // Restart auto-scroll on resize
-            });
-            
-            // Initialize
-            updateSlider();
-            startAutoScroll();
-        }
-        
-        // Initialize horizontal sliders
-        initHorizontalSlider('values-slider', 'values-track', 'values-dots', 4);
-        initHorizontalSlider('team-slider', 'team-track', 'team-dots', 3);
-        initHorizontalSlider('why-choose-slider', 'why-choose-track', 'why-choose-dots', 6);
-        initHorizontalSlider('stats-slider', 'stats-track', 'stats-dots', 4);
-    </script>
+    <script src="js/main.js" defer></script>
 </body>
 </html>

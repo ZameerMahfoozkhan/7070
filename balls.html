@@ -7,21 +7,7 @@
      <link rel="shortcut icon" href="./favicon_io/favicon.ico" type="image/x-icon">
     <title>7070  Tennis cricket ball | online hard tennis ball</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        cricket: {
-                            green: '#2D5016',
-                            gold: '#FFD700',
-                            brown: '#8B4513'
-                        }
-                    }
-                }
-            }
-        }
-    </script>
+    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="canonical" href="https://7070sportsayodhya.com/balls.html" />
     <script type="application/ld+json">
@@ -67,6 +53,9 @@
 }
 </script>
 
+
+    <link rel="stylesheet" href="styles.css">
+    <script src="js/tailwind-config.js"></script>
 </head>
 <body class="bg-gray-50">
     <!-- Header/Navbar -->
@@ -491,7 +480,8 @@ Every ball we manufacture is developed with certain quality and precision in min
                         <li><a href="faq.html" class="text-gray-300 hover:text-cricket-gold transition duration-300 flex items-center text-[10px] md:text-base"><i class="fas fa-chevron-right mr-1 md:mr-2 text-[8px] md:text-xs"></i>FAQs</a></li>
                         <li><a href="bulk-orders.html" class="text-gray-300 hover:text-cricket-gold transition duration-300 flex items-center text-[10px] md:text-base"><i class="fas fa-chevron-right mr-1 md:mr-2 text-[8px] md:text-xs"></i>Bulk Orders</a></li>
                         <li><a href="custom-jersey.html" class="text-gray-300 hover:text-cricket-gold transition duration-300 flex items-center text-[10px] md:text-base"><i class="fas fa-chevron-right mr-1 md:mr-2 text-[8px] md:text-xs"></i>Custom Jersey</a></li>
-                    </ul>
+                                            <li><a href="sitemap.html" class="text-gray-300 hover:text-cricket-gold transition duration-300 flex items-center text-[10px] md:text-base"><i class="fas fa-chevron-right mr-1 md:mr-2 text-[8px] md:text-xs"></i>Sitemap</a></li>
+</ul>
                 </div>
                 
                 <div>
@@ -539,39 +529,8 @@ Every ball we manufacture is developed with certain quality and precision in min
         </div>
     </footer>
 
-    <script>
-        // Mobile Menu Toggle
-        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
-        const mobileMenu = document.getElementById('mobile-menu');
-        
-        mobileMenuBtn.addEventListener('click', () => {
-            mobileMenu.classList.toggle('hidden');
-        });
+    
 
-        // Add to cart functionality
-        document.addEventListener('click', (e) => {
-            if (e.target.textContent === 'Add to Cart') {
-                e.preventDefault();
-                const productName = e.target.closest('.bg-white').querySelector('h3').textContent;
-                alert(`${productName} added to cart!`);
-                
-                // Add visual feedback
-                e.target.textContent = 'Added!';
-                e.target.classList.add('bg-green-600');
-                setTimeout(() => {
-                    e.target.textContent = 'Add to Cart';
-                    e.target.classList.remove('bg-green-600');
-                }, 2000);
-            }
-        });
-
-         // Read More Toggle
-        function toggleContent(btn) {
-      const content = btn.previousElementSibling;
-      content.classList.toggle("hidden");
-      btn.textContent = content.classList.contains("hidden") ? "Read More" : "Read Less";
-    }
-
-    </script>
+    <script src="js/main.js" defer></script>
 </body>
 </html>

@@ -260,6 +260,17 @@ window.slideCarousel = function(elem, dir) {
             
             const prevBtn = carousel.querySelector('.prev');
             const nextBtn = carousel.querySelector('.next');
+            
+            if (imgs.length <= 1) {
+                if(prevBtn) prevBtn.style.display = 'none';
+                if(nextBtn) nextBtn.style.display = 'none';
+                if(dotsContainer) dotsContainer.style.display = 'none';
+            } else {
+                if(prevBtn) prevBtn.style.display = '';
+                if(nextBtn) nextBtn.style.display = '';
+                if(dotsContainer) dotsContainer.style.display = '';
+            }
+            
             // Removed duplicate event listeners since HTML uses inline onclick="slideCarousel(...)"
             
             let startX = 0;

@@ -126,7 +126,7 @@ window.slideCarousel = function(elem, dir) {
             
             const whatsappText = "*New Contact Form Inquiry*\n\n*Name:* " + name + "\n*Phone:* " + phone + "\n*Email:* " + email + "\n*Subject:* " + subject + "\n*Message:* " + message;
             const encodedText = encodeURIComponent(whatsappText);
-            window.open("https://wa.me/917307256084?text=" + encodedText, '_blank');
+            window.open("https://wa.me/919118033485?text=" + encodedText, '_blank');
             
             const button = this.querySelector('button[type="submit"]');
             const originalText = button.innerHTML;
